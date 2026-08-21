@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="unified TREE control plane for 57 SoC device nodes">
+  <title>unified TREE · Node Control Plane</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header>
+    <a class="brand" href="/" aria-label="unified TREE home">
+      <span class="mark">⌁</span><span>unified <b>TREE</b></span>
+    </a>
+    <div class="system-state"><i></i><span id="system-state">CONTROL PLANE READY</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">SYSTEM / NODE FABRIC / 2026</p>
+      <h1>One living system.<br><em>Every device a node.</em></h1>
+      <p class="lede">The operational layer connecting every SoC Device Invention through shared identity, routing, contracts, and safety boundaries.</p>
+      <div class="metrics">
+        <div><strong id="node-count">—</strong><span>NODE TYPES</span></div>
+        <div><strong id="domain-count">—</strong><span>DOMAINS</span></div>
+        <div><strong>4</strong><span>SYSTEM ROLES</span></div>
+        <div><strong>6</strong><span>MESSAGE TYPES</span></div>
+      </div>
+    </section>
+
+    <section class="topology panel">
+      <div class="section-head"><div><p class="eyebrow">LIVE ARCHITECTURE</p><h2>Interconnection fabric</h2></div><span class="hint">Select a role to filter nodes</span></div>
+      <div class="role-map" id="role-map"></div>
+    </section>
+
+    <section class="fleet panel">
+      <div class="section-head">
+        <div><p class="eyebrow">NODE REGISTRY</p><h2>The full fleet</h2></div>
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search node or domain…" aria-label="Search nodes"></label>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="node-grid" id="node-grid" aria-live="polite"></div>
+      <p class="empty" id="empty" hidden>No nodes match this view.</p>
+    </section>
+  </main>
+
+  <footer><span>unified TREE / OPEN NODE SYSTEM</span><a href="https://github.com/jayis1/SoC-Device-Inventions">SOURCE DEVICES ↗</a><a href="https://github.com/jayis1/unified-TREE">GITHUB ↗</a></footer>
+  <script src="/app.js"></script>
+</body>
+</html>

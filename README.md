@@ -11,6 +11,34 @@ The two repositories have distinct responsibilities:
 
 No device is replaced or hidden by this system. Each remains independently buildable in the source collection and also gains a defined place in the unified architecture.
 
+## Run the server and dashboard
+
+unified TREE is the central control-plane server for the node system. It serves the complete registry and topology as JSON APIs alongside a responsive fleet dashboard.
+
+```bash
+git clone https://github.com/jayis1/unified-TREE.git
+cd unified-TREE
+python3 tools/validate.py
+python3 server.py
+```
+
+Open [http://127.0.0.1:8080](http://127.0.0.1:8080). No third-party Python packages or frontend build step are required.
+
+The dashboard provides the full 57-node fleet, role and domain filters, search, topology, system counts, and control-plane status. The server exposes:
+
+| Endpoint | Purpose |
+|---|---|
+| `GET /api/health` | Server readiness and registry size |
+| `GET /api/nodes` | Complete device-node registry |
+| `GET /api/topology` | Four roles and their routing contracts |
+| `GET /api/summary` | Counts by domain and role |
+
+Bind to a network interface when the dashboard should be reachable by other machines:
+
+```bash
+python3 server.py --host 0.0.0.0 --port 8080
+```
+
 ## The 57 nodes and four roles
 
 The device inventions are the nodes. **Observe, Reason, Act, and Coordinate are roles those nodes perform**, not four additional devices. A node can perform one role or several roles depending on its sensors, processing, actuators, and communications.
