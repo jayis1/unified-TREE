@@ -21,7 +21,7 @@ $Shell = New-Object -ComObject WScript.Shell
 $Shortcut = $Shell.CreateShortcut((Join-Path $StartMenu "unified TREE.lnk"))
 $Shortcut.TargetPath = $Launcher
 $Shortcut.WorkingDirectory = $InstallDir
-$Shortcut.Description = "Control plane for 57 interconnected SoC device nodes"
+$Shortcut.Description = "Control plane for interconnected SoC device nodes"
 $Shortcut.Save()
 
 Write-Host "unified TREE is installed in $InstallDir"

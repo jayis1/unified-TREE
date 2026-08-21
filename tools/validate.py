@@ -15,8 +15,8 @@ def main() -> int:
     ids = [device["id"] for device in devices]
     roles = {role["id"] for role in platform["roles"]}
 
-    if len(ids) != 57:
-        errors.append(f"expected 57 device nodes, found {len(ids)}")
+    if not ids:
+        errors.append("registry must contain at least one device node")
     if len(ids) != len(set(ids)):
         errors.append("device node IDs are not unique")
     if roles != ROLES:

@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-PACKAGE_URL="https://github.com/jayis1/unified-TREE/releases/latest/download/unified-tree_0.1.0_all.deb"
+PACKAGE_URL="https://github.com/jayis1/unified-TREE/releases/latest/download/unified-tree_all.deb"
 PACKAGE_FILE=$(mktemp /tmp/unified-tree.XXXXXX.deb)
 trap 'rm -f "$PACKAGE_FILE"' EXIT HUP INT TERM
 

@@ -21,7 +21,7 @@ cat > "$APP_DIR/unified-tree.desktop" <<EOF
 [Desktop Entry]
 Type=Application
 Name=unified TREE
-Comment=Control plane for 57 interconnected SoC device nodes
+Comment=Control plane for interconnected SoC device nodes
 Exec=$BIN_DIR/unified-tree
 Icon=network-wired
 Terminal=false

@@ -2,7 +2,7 @@
 set -eu
 
 ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/../.." && pwd)
-VERSION="0.1.0"
+VERSION="0.1.1"
 ARCH="all"
 BUILD=$(mktemp -d /tmp/unified-tree-deb.XXXXXX)
 PKG="$BUILD/unified-tree_${VERSION}_${ARCH}"
@@ -27,7 +27,7 @@ chmod 0644 "$PKG/usr/share/applications/unified-tree.desktop" "$PKG/usr/share/ic
 find "$PKG/opt/unified-tree" -type f -exec chmod 0644 {} \;
 find "$PKG/opt/unified-tree" -type d -exec chmod 0755 {} \;
 
-DEB="$OUT/unified-tree_${VERSION}_${ARCH}.deb"
+DEB="$OUT/unified-tree_all.deb"
 if command -v dpkg-deb >/dev/null 2>&1; then
     dpkg-deb --root-owner-group --build "$PKG" "$DEB"
 else

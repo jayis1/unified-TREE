@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=unified TREE
-Comment=Control plane for 57 interconnected SoC device nodes
+Comment=Control plane for interconnected SoC device nodes
 Exec=unified-tree
 Icon=unified-tree
 Terminal=false
