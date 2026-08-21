@@ -1,0 +1,11 @@
+Package: unified-tree
+Version: 0.1.0
+Section: science
+Priority: optional
+Architecture: all
+Depends: python3 (>= 3.11)
+Maintainer: jayis1 <jaisbygebjerg@gmail.com>
+Homepage: https://github.com/jayis1/unified-TREE
+Description: Dashboard for the unified SoC device-node system
+ unified TREE is the local server and visual control plane connecting all
+ 57 node types from SoC Device Inventions through shared roles and protocols.

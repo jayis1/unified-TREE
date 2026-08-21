@@ -11,13 +11,37 @@ The two repositories have distinct responsibilities:
 
 No device is replaced or hidden by this system. Each remains independently buildable in the source collection and also gains a defined place in the unified architecture.
 
-## Run the server and dashboard
+## Install on Debian 13
 
-unified TREE is the central control-plane server for the node system. It serves the complete registry and topology as JSON APIs alongside a responsive fleet dashboard.
+Install unified TREE with one command:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jayis1/unified-TREE/main/install-debian.sh | sudo sh
+```
+
+This downloads the latest published GitHub release asset and installs it through `apt`. After installation:
+
+- open **unified TREE** from the Debian application menu; or
+- run `unified-tree` in a terminal.
+
+The application installs under `/opt/unified-tree`, registers its desktop file and scalable icon under `/usr/share`, and exposes `/usr/bin/unified-tree`. The launcher starts a loopback-only server on an available port and opens the dashboard in your default browser.
+
+### Build the Debian package locally
 
 ```bash
 git clone https://github.com/jayis1/unified-TREE.git
 cd unified-TREE
+sh packaging/debian/build-deb.sh
+sudo apt install ./dist/unified-tree_0.1.0_all.deb
+```
+
+The package targets Debian 13 and depends only on Debian's `python3` package.
+
+## Run without installing
+
+unified TREE is the central control-plane server for the node system. It serves the complete registry and topology as JSON APIs alongside a responsive fleet dashboard.
+
+```bash
 python3 tools/validate.py
 python3 server.py
 ```

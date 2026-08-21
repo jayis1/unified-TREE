@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=unified TREE
+Comment=Control plane for 57 interconnected SoC device nodes
+Exec=unified-tree
+Icon=unified-tree
+Terminal=false
+Categories=Science;Development;Network;
+Keywords=SoC;IoT;nodes;dashboard;
+StartupNotify=true
