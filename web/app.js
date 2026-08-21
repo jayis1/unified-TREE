@@ -21,10 +21,21 @@ function renderNodes(){
 function render(){renderRoles();renderFilters();renderNodes()}
 async function boot(){
   try{
-    const [nodes,topology,summary]=await Promise.all(['/api/nodes','/api/topology','/api/summary'].map(u=>fetch(u).then(r=>r.json())));
+    let nodes,topology,summary;
+    try{
+      [nodes,topology,summary]=await Promise.all(['./api/nodes','./api/topology','./api/summary'].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})));
+    }catch(_apiUnavailable){
+      [nodes,topology]=await Promise.all(['./devices.json','./platform.json'].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})));
+      summary={nodes:nodes.devices.length,domains:Object.fromEntries([...new Set(nodes.devices.map(n=>n.domain))].map(d=>[d,nodes.devices.filter(n=>n.domain===d).length]))};
+    }
     state.nodes=nodes.devices;state.topology=topology;
     $('#node-count').textContent=summary.nodes;$('#domain-count').textContent=Object.keys(summary.domains).length;
     render();
   }catch(error){$('#system-state').textContent='CONTROL PLANE OFFLINE';console.error(error)}
 }
+let installPrompt;
+window.addEventListener('beforeinstallprompt',event=>{event.preventDefault();installPrompt=event;$('#install-app').hidden=false});
+$('#install-app').addEventListener('click',async()=>{if(!installPrompt)return;installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;$('#install-app').hidden=true});
+window.addEventListener('appinstalled',()=>{$('#install-app').hidden=true});
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
 $('#search').addEventListener('input',e=>{state.query=e.target.value;renderNodes()});boot();

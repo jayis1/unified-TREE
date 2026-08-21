@@ -4,8 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="unified TREE control plane for a growing fleet of SoC device nodes">
+  <meta name="theme-color" content="#122019">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="unified TREE">
   <title>unified TREE · Node Control Plane</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/tree.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/tree.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./pwa.css">
 </head>
 <body>
   <div class="grain"></div>
@@ -13,7 +22,7 @@
     <a class="brand" href="/" aria-label="unified TREE home">
       <span class="mark">⌁</span><span>unified <b>TREE</b></span>
     </a>
-    <div class="system-state"><i></i><span id="system-state">CONTROL PLANE READY</span></div>
+    <div class="header-actions"><button id="install-app" class="install" hidden>INSTALL APP</button><div class="system-state"><i></i><span id="system-state">CONTROL PLANE READY</span></div></div>
   </header>
 
   <main>
@@ -34,7 +43,7 @@
       <div class="role-map" id="role-map"></div>
     </section>
 
-    <section class="fleet panel">
+    <section class="fleet panel" id="fleet">
       <div class="section-head">
         <div><p class="eyebrow">NODE REGISTRY</p><h2>The full fleet</h2></div>
         <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search node or domain…" aria-label="Search nodes"></label>
@@ -46,6 +55,6 @@
   </main>
 
   <footer><span>unified TREE / OPEN NODE SYSTEM</span><a href="https://github.com/jayis1/SoC-Device-Inventions">SOURCE DEVICES ↗</a><a href="https://github.com/jayis1/unified-TREE">GITHUB ↗</a></footer>
-  <script src="/app.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>

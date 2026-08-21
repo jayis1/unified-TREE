@@ -1,0 +1,21 @@
+{
+  "name": "unified TREE",
+  "short_name": "TREE",
+  "description": "Web control plane for the growing SoC device-node fleet",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f3f1e8",
+  "theme_color": "#122019",
+  "categories": ["utilities", "productivity", "education"],
+  "icons": [
+    {"src": "./icons/tree.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"},
+    {"src": "./icons/tree-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Node fleet", "short_name": "Nodes", "url": "./#fleet", "icons": [{"src": "./icons/tree.svg", "sizes": "any", "type": "image/svg+xml"}]}
+  ]
+}

@@ -11,33 +11,17 @@ The two repositories have distinct responsibilities:
 
 No device is replaced or hidden by this system. Each remains independently buildable in the source collection and also gains a defined place in the unified architecture.
 
-## Install on Debian 13
+## Web app and Android PWA
 
-Install unified TREE with one command:
+unified TREE is a webpage-based dashboard with a Home Assistant-inspired control-plane experience. Use the hosted web app at:
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/jayis1/unified-TREE/main/install-debian.sh | sudo sh
-```
+**[Open unified TREE →](https://jayis1.github.io/unified-TREE/)**
 
-This downloads the latest published GitHub release asset and installs it through `apt`. After installation:
+On Android, open that address in Chrome and choose **Install app** from the browser menu or use the dashboard's **Install App** button. It launches in its own window, receives updated node data from the web deployment, and keeps the application shell available offline. Desktop Chromium browsers can install the same PWA from the address bar.
 
-- open **unified TREE** from the Debian application menu; or
-- run `unified-tree` in a terminal.
+There is no `.deb`, Electron wrapper, or native Android APK. The PWA manifest and service worker provide the installable app experience directly from the web.
 
-The application installs under `/opt/unified-tree`, registers its desktop file and scalable icon under `/usr/share`, and exposes `/usr/bin/unified-tree`. The launcher starts a loopback-only server on an available port and opens the dashboard in your default browser.
-
-### Build the Debian package locally
-
-```bash
-git clone https://github.com/jayis1/unified-TREE.git
-cd unified-TREE
-sh packaging/debian/build-deb.sh
-sudo apt install ./dist/unified-tree_all.deb
-```
-
-The package targets Debian 13 and depends only on Debian's `python3` package.
-
-## Run without installing
+## Run the web server locally
 
 unified TREE is the central control-plane server for the node system. It serves the complete registry and topology as JSON APIs alongside a responsive fleet dashboard.
 
@@ -62,6 +46,18 @@ Bind to a network interface when the dashboard should be reachable by other mach
 ```bash
 python3 server.py --host 0.0.0.0 --port 8080
 ```
+
+## Home Assistant integration
+
+unified TREE includes a custom Home Assistant integration under [`custom_components/unified_tree`](./custom_components/unified_tree/). It connects to a running unified TREE server over the local API and creates:
+
+- a connectivity binary sensor;
+- a registered-node count sensor; and
+- a domain count sensor.
+
+For manual installation, copy `custom_components/unified_tree` into Home Assistant's `config/custom_components/` directory, restart Home Assistant, then choose **Settings → Devices & services → Add integration → unified TREE**. Enter the server address, such as `http://192.168.1.20:8080`.
+
+The integration is local-polling and does not require a cloud account. This is the first Home Assistant bridge; device entities, controls, events, and automations can expand as physical node adapters join the unified protocol.
 
 ## A growing node tree and four roles
 

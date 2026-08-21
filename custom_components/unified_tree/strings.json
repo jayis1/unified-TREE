@@ -1,0 +1,7 @@
+{
+  "config": {
+    "step": {"user": {"title": "Connect to unified TREE", "description": "Enter the URL of the unified TREE server.", "data": {"url": "Server URL"}}},
+    "error": {"cannot_connect": "Unable to connect to unified TREE."},
+    "abort": {"already_configured": "This unified TREE server is already configured."}
+  }
+}

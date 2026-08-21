@@ -46,6 +46,10 @@ class TreeHandler(SimpleHTTPRequestHandler):
             self.send_json(load_json("devices.json"))
         elif path == "/api/topology":
             self.send_json(load_json("platform.json"))
+        elif path == "/devices.json":
+            self.send_json(load_json("devices.json"))
+        elif path == "/platform.json":
+            self.send_json(load_json("platform.json"))
         elif path == "/api/summary":
             devices = load_json("devices.json")["devices"]
             self.send_json({
