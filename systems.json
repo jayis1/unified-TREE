@@ -1952,6 +1952,44 @@
           ]
         }
       ]
+    },
+    {
+      "id": "WasteSort",
+      "title": "WasteSort",
+      "domain": "Household Waste Diversion & Recycling",
+      "source_path": "WasteSort",
+      "nodes": [
+        {
+          "id": "hub-gateway",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "countertop-sorter",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "bin-dock-node",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "outdoor-pickup-beacon",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
     }
   ]
 }
