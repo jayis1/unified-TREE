@@ -1,0 +1,1958 @@
+{
+  "schema_version": 1,
+  "collection": "Devices",
+  "source_repository": "https://github.com/jayis1/Devices",
+  "systems": [
+    {
+      "id": "AllergySync",
+      "title": "AllergySync",
+      "domain": "Seasonal Allergy & Pollen Management",
+      "source_path": "AllergySync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "room-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wearable-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "window-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AsthmaSync",
+      "title": "AsthmaSync",
+      "domain": "Respiratory Health & Asthma Management",
+      "source_path": "AsthmaSync",
+      "nodes": [
+        {
+          "id": "air-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "inhaler-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wheeze-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BrewSync",
+      "title": "BrewSync",
+      "domain": "Home Fermentation & Craft Brewing",
+      "source_path": "BrewSync",
+      "nodes": [
+        {
+          "id": "cellar",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "fermenter",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "scanner",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CardioSync",
+      "title": "CardioSync",
+      "domain": "Cardiovascular Health & Arrhythmia Detection",
+      "source_path": "CardioSync",
+      "nodes": [
+        {
+          "id": "bp-cuff",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "ecg-patch",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "smart-ring",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CompostSync",
+      "title": "CompostSync",
+      "domain": "Home Composting & Food Waste",
+      "source_path": "CompostSync",
+      "nodes": [
+        {
+          "id": "bin-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "soil-probe",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "weather-station",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CycleGuard",
+      "title": "CycleGuard",
+      "domain": "Cycling Safety & Theft Prevention",
+      "source_path": "CycleGuard",
+      "nodes": [
+        {
+          "id": "bike-sensor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "smart-helmet",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "smart-light",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "smart-lock",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DriveSync",
+      "title": "DriveSync",
+      "domain": "Driving Safety & Drowsiness Prevention",
+      "source_path": "DriveSync",
+      "nodes": [
+        {
+          "id": "belt-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "obd-dongle",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wheel-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EchoSync",
+      "title": "EchoSync",
+      "domain": "Accessibility for the Deaf & Hard-of-Hearing",
+      "source_path": "EchoSync",
+      "nodes": [
+        {
+          "id": "door-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "room-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wrist-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FireSync",
+      "title": "FireSync",
+      "domain": "Home Fire Safety",
+      "source_path": "FireSync",
+      "nodes": [
+        {
+          "id": "escape-controller",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "panel-monitor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "room-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "stove-guard",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GlucoSync",
+      "title": "GlucoSync",
+      "domain": "Diabetes & Metabolic Health",
+      "source_path": "GlucoSync",
+      "nodes": [
+        {
+          "id": "activity-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "meal-scanner",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "pen-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GrillSync",
+      "title": "GrillSync",
+      "domain": "Grilling Safety & Food Quality",
+      "source_path": "GrillSync",
+      "nodes": [
+        {
+          "id": "grill-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "meat-probe",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "smoke-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GuideSync",
+      "title": "GuideSync",
+      "domain": "Accessibility for the Blind & Visually Impaired",
+      "source_path": "GuideSync",
+      "nodes": [
+        {
+          "id": "haptic-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "nav-beacon",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "smart-cane",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "smart-glasses",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HiveSync",
+      "title": "HiveSync",
+      "domain": "Beekeeping & Pollinator Health",
+      "source_path": "HiveSync",
+      "nodes": [
+        {
+          "id": "entrance-monitor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hive-hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "hive-sensor-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "smart-feeder",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JointSync",
+      "title": "JointSync",
+      "domain": "Joint Health & Arthritis Management",
+      "source_path": "JointSync",
+      "nodes": [
+        {
+          "id": "compression-sleeve",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "joint-scanner",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "joint-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LawnSync",
+      "title": "LawnSync",
+      "domain": "Smart Lawn & Turf Health",
+      "source_path": "LawnSync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "scanner-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "soil-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "sprinkler",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "weather-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MenoSync",
+      "title": "MenoSync",
+      "domain": "Menopause Management & Wellness",
+      "source_path": "MenoSync",
+      "nodes": [
+        {
+          "id": "bed-mat",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "climate-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "meno-hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "wrist-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MigraineSync",
+      "title": "MigraineSync",
+      "domain": "Migraine & Headache Health",
+      "source_path": "MigraineSync",
+      "nodes": [
+        {
+          "id": "aura-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "env-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "hydrate-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MosquitoSync",
+      "title": "MosquitoSync",
+      "domain": "Mosquito Detection & Disease Prevention",
+      "source_path": "MosquitoSync",
+      "nodes": [
+        {
+          "id": "acoustic-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "co2-trap",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "weather-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "window-barrier",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PestSync",
+      "title": "PestSync",
+      "domain": "Home Pest Detection & Deterrence",
+      "source_path": "PestSync",
+      "nodes": [
+        {
+          "id": "deterrent-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "pest-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "smart-trap",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PoolSync",
+      "title": "PoolSync",
+      "domain": "Pool & Spa Health",
+      "source_path": "PoolSync",
+      "nodes": [
+        {
+          "id": "chemistry_probe",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "equipment_controller",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "pool_camera",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PostureSync",
+      "title": "PostureSync",
+      "domain": "Spinal Health & Posture Correction",
+      "source_path": "PostureSync",
+      "nodes": [
+        {
+          "id": "chair_pad",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "desk_sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "posture_garment",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "spine_band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QuakeGuard",
+      "title": "QuakeGuard",
+      "domain": "Earthquake Safety & Structural Health",
+      "source_path": "QuakeGuard",
+      "nodes": [
+        {
+          "id": "floor-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "shutoff-controller",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "structural-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SightSync",
+      "title": "SightSync",
+      "domain": "Eye Health & Digital Eye Strain",
+      "source_path": "SightSync",
+      "nodes": [
+        {
+          "id": "desk-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "eye-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "lamp-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "StormSync",
+      "title": "StormSync",
+      "domain": "Home Flood Protection",
+      "source_path": "StormSync",
+      "nodes": [
+        {
+          "id": "flood-actuator",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "saturation-probe",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "sump-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "weather-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TremorSync",
+      "title": "TremorSync",
+      "domain": "Parkinson's Disease Management",
+      "source_path": "TremorSync",
+      "nodes": [
+        {
+          "id": "gait_pod",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "med_station",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "tremor_band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "voice_node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VoiceSync",
+      "title": "VoiceSync",
+      "domain": "Voice Health & Vocal Wellness",
+      "source_path": "VoiceSync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "humidity-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hydration-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "room-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "vocal-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WanderSync",
+      "title": "WanderSync",
+      "domain": "Dementia Care & Aging-in-Place",
+      "source_path": "WanderSync",
+      "nodes": [
+        {
+          "id": "care-hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "door-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "room-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "voice-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wander-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aqua-guard",
+      "title": "Aqua Guard",
+      "domain": "Home Pet Care",
+      "source_path": "aqua-guard",
+      "nodes": [
+        {
+          "id": "feeder-node",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "sensor-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bloom-sync",
+      "title": "BloomSync",
+      "domain": "Postpartum Maternal Health",
+      "source_path": "bloom-sync",
+      "nodes": [
+        {
+          "id": "bloom-hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "nursing-sensor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "recovery-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wound-patch",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "breath-home",
+      "title": "BreathHome",
+      "domain": "Indoor Air Quality",
+      "source_path": "breath-home",
+      "nodes": [
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "hvac-controller",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "room-sensor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wearable-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calm-grid",
+      "title": "CalmGrid",
+      "domain": "Mental Health & Stress",
+      "source_path": "calm-grid",
+      "nodes": [
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "light-node",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "room-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wrist-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cradle-keep",
+      "title": "CradleKeep",
+      "domain": "Infant Care",
+      "source_path": "cradle-keep",
+      "nodes": [
+        {
+          "id": "crib-pad",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "feeding-station",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "nursery-monitor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ergo-flow",
+      "title": "ErgoFlow",
+      "domain": "Workspace Wellness",
+      "source_path": "ergo-flow",
+      "nodes": [
+        {
+          "id": "chair-pad",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "desk-controller",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "wearable-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flow-guard",
+      "title": "FlowGuard",
+      "domain": "Home Water Protection",
+      "source_path": "flow-guard",
+      "nodes": [
+        {
+          "id": "appliance-monitor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "pipe-sensor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "valve-controller",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fresh-keep",
+      "title": "FreshKeep",
+      "domain": "Kitchen Intelligence",
+      "source_path": "fresh-keep",
+      "nodes": [
+        {
+          "id": "fridge-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "pantry-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "stove-guard",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "green-pulse",
+      "title": "GreenPulse",
+      "domain": "Houseplant Care",
+      "source_path": "green-pulse",
+      "nodes": [
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "leaf-scanner",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "plant-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "water-valve",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hearth-keep",
+      "title": "HearthKeep",
+      "domain": "Elder Safety",
+      "source_path": "hearth-keep",
+      "nodes": [
+        {
+          "id": "bed-mat",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "room-monitor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wearable-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "med-sync",
+      "title": "MedSync",
+      "domain": "Medication Adherence",
+      "source_path": "med-sync",
+      "nodes": [
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "pill-station",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "room-beacon",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wearable-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oral-sync",
+      "title": "OralSync",
+      "domain": "Oral Health & Cavity Prevention",
+      "source_path": "oral-sync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "saliva_patch",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "scanner",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "toothbrush",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paw-sync",
+      "title": "PawSync",
+      "domain": "Pet Health & Behavior",
+      "source_path": "paw-sync",
+      "nodes": [
+        {
+          "id": "behavior-camera",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "collar-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "feeder-node",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pest-sentinel",
+      "title": "PestSentinel",
+      "domain": "Agriculture & Crop Protection",
+      "source_path": "pest-sentinel",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "scout-camera",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "trap-node",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "field-sensor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "dispenser-node",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "porch-guard",
+      "title": "PorchGuard",
+      "domain": "Home Delivery Security",
+      "source_path": "porch-guard",
+      "nodes": [
+        {
+          "id": "camera-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "lock-node",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "mailbox-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "power-pulse",
+      "title": "PowerPulse",
+      "domain": "Home Energy & Safety",
+      "source_path": "power-pulse",
+      "nodes": [
+        {
+          "id": "appliance-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "circuit-monitor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "solar-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rehab-sync",
+      "title": "RehabSync",
+      "domain": "Physical Therapy & Rehabilitation",
+      "source_path": "rehab-sync",
+      "nodes": [
+        {
+          "id": "body-sensor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "pressure-mat",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "smart-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seizuresync",
+      "title": "SeizureSync",
+      "domain": "Epilepsy & SUDEP Prevention",
+      "source_path": "seizuresync",
+      "nodes": [
+        {
+          "id": "aura-patch",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "caregiver-beacon",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "seizure-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "seizure-hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skin-sync",
+      "title": "SkinSync",
+      "domain": "Skin Health & Sun Safety",
+      "source_path": "skin-sync",
+      "nodes": [
+        {
+          "id": "dispenser-node",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "skin-scanner",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "uv-patch",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sleep-sync",
+      "title": "SleepSync",
+      "domain": "Sleep Health",
+      "source_path": "sleep-sync",
+      "nodes": [
+        {
+          "id": "climate-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "nightstand-hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "shade-controller",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "sleep-strip",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sole-guard",
+      "title": "SoleGuard",
+      "domain": "Diabetic Foot Health",
+      "source_path": "sole-guard",
+      "nodes": [
+        {
+          "id": "ankle-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "foot-scanner",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "insole-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sound-nest",
+      "title": "SoundNest",
+      "domain": "Home Acoustics",
+      "source_path": "sound-nest",
+      "nodes": [
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "masking-speaker",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "room-sensor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wearable-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thermo-grid",
+      "title": "ThermoGrid",
+      "domain": "Home Thermal Comfort & Energy",
+      "source_path": "thermo-grid",
+      "nodes": [
+        {
+          "id": "comfort-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "room-sensor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "zone-actuator",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trail-sync",
+      "title": "TrailSync",
+      "domain": "Trail Running & Outdoor Safety",
+      "source_path": "trail-sync",
+      "nodes": [
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "shoe-pod",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "trail-beacon",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "wrist-unit",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "urban-harvest",
+      "title": "UrbanHarvest",
+      "domain": "Urban Farming",
+      "source_path": "urban-harvest",
+      "nodes": [
+        {
+          "id": "grow-pod",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "plant-sensor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "weather-station",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wash-wise",
+      "title": "WashWise",
+      "domain": "Laundry Care & Fire Safety",
+      "source_path": "wash-wise",
+      "nodes": [
+        {
+          "id": "dryer-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "scanner-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "washer-node",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    }
+  ]
+}
+

@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir _site
           cp -R web/. _site/
-          cp devices.json platform.json _site/
+          cp devices.json systems.json platform.json _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

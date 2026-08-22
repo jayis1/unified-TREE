@@ -1,5 +1,5 @@
-const CACHE='unified-tree-v1';
-const SHELL=['./','./index.html','./styles.css','./pwa.css','./app.js','./manifest.webmanifest','./icons/tree.svg','./icons/tree-maskable.svg','./devices.json','./platform.json'];
+const CACHE='unified-tree-v2';
+const SHELL=['./','./index.html','./styles.css','./pwa.css','./nodes.css','./app.js','./manifest.webmanifest','./icons/tree.svg','./icons/tree-maskable.svg','./devices.json','./systems.json','./platform.json'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{

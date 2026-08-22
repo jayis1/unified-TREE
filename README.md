@@ -1,15 +1,22 @@
 # unified TREE
 
-**unified TREE** is the unifying system for the complete and growing [SoC Device Inventions repository](https://github.com/jayis1/SoC-Device-Inventions). **Every current and future hardware design becomes a node in the greater system.** Together they form one interoperable family of sensors, scientific instruments, controllers, interfaces, and network nodes.
+**unified TREE** is the unifying web control plane for the complete and growing [SoC Device Inventions](https://github.com/jayis1/SoC-Device-Inventions) and [Devices](https://github.com/jayis1/Devices) repositories. Every current and future hardware design becomes a node; every multi-device system becomes a branch with child nodes. Together they form one interoperable tree of sensors, scientific instruments, controllers, hubs, interfaces, and gateways.
 
-The two repositories have distinct responsibilities:
+The three repositories have distinct responsibilities:
 
 | Repository | Responsibility |
 |---|---|
 | [SoC Device Inventions](https://github.com/jayis1/SoC-Device-Inventions) | Canonical device designs: schematics, firmware, BOMs, host tools, assembly instructions, and device-level documentation |
+| [Devices](https://github.com/jayis1/Devices) | Canonical full systems: coordinated hubs, sensors, actuators, gateways, edge/cloud software, apps, and ML pipelines |
 | [unified TREE](https://github.com/jayis1/unified-TREE) | Node registry, common protocol, four functional roles, composition rules, validation, and the larger system interface |
 
-No device is replaced or hidden by this system. Each remains independently buildable in the source collection and also gains a defined place in the unified architecture.
+No device or system is replaced or hidden. Each remains independently buildable in its source collection and also gains a defined place in the unified architecture.
+
+## Two source collections, one tree
+
+[`devices.json`](./devices.json) registers the standalone inventions from SoC Device Inventions. [`systems.json`](./systems.json) registers every project from Devices as a branch and maps its firmware components as child nodes. Node identities are namespaced by collection and system, so repeated names such as `hub`, `room-sensor`, and `wearable-tag` remain unambiguous.
+
+The current Devices import adds 53 source project directories and 222 child node types. Those counts are discovered from the registries rather than imposed as limits; both collections can keep growing.
 
 ## Web app and Android PWA
 
@@ -38,6 +45,7 @@ The dashboard reads the registry dynamically and provides the full current fleet
 |---|---|
 | `GET /api/health` | Server readiness and registry size |
 | `GET /api/nodes` | Complete device-node registry |
+| `GET /api/systems` | Multi-node system branches and their child nodes |
 | `GET /api/topology` | Four roles and their routing contracts |
 | `GET /api/summary` | Counts by domain and role |
 

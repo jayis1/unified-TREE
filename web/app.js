@@ -14,8 +14,8 @@ function renderFilters(){
 }
 function renderNodes(){
   const q=state.query.toLowerCase();
-  const nodes=state.nodes.filter(n=>(state.role==='all'||n.roles.includes(state.role))&&(state.domain==='all'||n.domain===state.domain)&&(`${n.id} ${n.domain} ${n.roles.join(' ')}`.includes(q)));
-  $('#node-grid').innerHTML=nodes.map(n=>`<article class="node"><div><span class="domain">${n.domain.replaceAll('-',' ')}</span><h3>${n.id.replaceAll('-',' ')}</h3></div><div class="tags">${n.roles.map(r=>`<span class="tag">${r}</span>`).join('')}</div></article>`).join('');
+  const nodes=state.nodes.filter(n=>(state.role==='all'||n.roles.includes(state.role))&&(state.domain==='all'||n.domain===state.domain)&&(`${n.id} ${n.title||''} ${n.system||''} ${n.collection||''} ${n.domain} ${n.roles.join(' ')}`.toLowerCase().includes(q)));
+  $('#node-grid').innerHTML=nodes.map(n=>`<article class="node"><div><span class="domain">${n.collection||'SoC Device Inventions'} · ${n.domain.replaceAll('-',' ')}</span><h3>${(n.title||n.id).replaceAll('-',' ')}</h3>${n.system?`<small>${n.system}</small>`:''}</div><div class="tags">${n.roles.map(r=>`<span class="tag">${r}</span>`).join('')}</div></article>`).join('');
   $('#empty').hidden=nodes.length>0;
 }
 function render(){renderRoles();renderFilters();renderNodes()}
@@ -24,12 +24,15 @@ async function boot(){
     let nodes,topology,summary;
     try{
       [nodes,topology,summary]=await Promise.all(['./api/nodes','./api/topology','./api/summary'].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})));
+      nodes={devices:nodes.nodes};
     }catch(_apiUnavailable){
-      [nodes,topology]=await Promise.all(['./devices.json','./platform.json'].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})));
-      summary={nodes:nodes.devices.length,domains:Object.fromEntries([...new Set(nodes.devices.map(n=>n.domain))].map(d=>[d,nodes.devices.filter(n=>n.domain===d).length]))};
+      const [soc,systems,tree]=await Promise.all(['./devices.json','./systems.json','./platform.json'].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})));
+      topology=tree;
+      nodes={devices:[...soc.devices.map(n=>({...n,collection:'SoC Device Inventions',system:null})),...systems.systems.flatMap(s=>s.nodes.map(n=>({id:`${s.id}/${n.id}`,title:n.id,domain:s.domain,roles:n.roles,collection:'Devices',system:s.title}))) ]};
+      summary={nodes:nodes.devices.length,systems:systems.systems.length,domains:Object.fromEntries([...new Set(nodes.devices.map(n=>n.domain))].map(d=>[d,nodes.devices.filter(n=>n.domain===d).length]))};
     }
     state.nodes=nodes.devices;state.topology=topology;
-    $('#node-count').textContent=summary.nodes;$('#domain-count').textContent=Object.keys(summary.domains).length;
+    $('#node-count').textContent=summary.nodes;$('#system-count').textContent=summary.systems;$('#domain-count').textContent=Object.keys(summary.domains).length;
     render();
   }catch(error){$('#system-state').textContent='CONTROL PLANE OFFLINE';console.error(error)}
 }

@@ -19,6 +19,23 @@ def load_json(name: str):
     return json.loads((ROOT / name).read_text(encoding="utf-8"))
 
 
+def all_nodes():
+    nodes = [dict(node, collection="SoC Device Inventions", system=None)
+             for node in load_json("devices.json")["devices"]]
+    systems = load_json("systems.json")["systems"]
+    for system in systems:
+        for node in system["nodes"]:
+            nodes.append({
+                "id": f"{system['id']}/{node['id']}",
+                "title": node["id"],
+                "domain": system["domain"],
+                "roles": node["roles"],
+                "collection": "Devices",
+                "system": system["title"],
+            })
+    return nodes
+
+
 class TreeHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(WEB), **kwargs)
@@ -35,7 +52,7 @@ class TreeHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         path = urlparse(self.path).path
         if path == "/api/health":
-            devices = load_json("devices.json")["devices"]
+            devices = all_nodes()
             self.send_json({
                 "status": "ready",
                 "service": "unified TREE",
@@ -43,17 +60,24 @@ class TreeHandler(SimpleHTTPRequestHandler):
                 "node_types": len(devices),
             })
         elif path == "/api/nodes":
-            self.send_json(load_json("devices.json"))
+            self.send_json({"schema_version": 1, "nodes": all_nodes()})
+        elif path == "/api/systems":
+            self.send_json(load_json("systems.json"))
         elif path == "/api/topology":
             self.send_json(load_json("platform.json"))
         elif path == "/devices.json":
             self.send_json(load_json("devices.json"))
         elif path == "/platform.json":
             self.send_json(load_json("platform.json"))
+        elif path == "/systems.json":
+            self.send_json(load_json("systems.json"))
         elif path == "/api/summary":
-            devices = load_json("devices.json")["devices"]
+            devices = all_nodes()
+            systems = load_json("systems.json")["systems"]
             self.send_json({
                 "nodes": len(devices),
+                "systems": len(systems),
+                "collections": 2,
                 "domains": dict(sorted(Counter(d["domain"] for d in devices).items())),
                 "roles": dict(sorted(Counter(r for d in devices for r in d["roles"]).items())),
             })
