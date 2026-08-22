@@ -2034,6 +2034,51 @@
           ]
         }
       ]
+    },
+    {
+      "id": "SchoolSync",
+      "title": "SchoolSync",
+      "domain": "Family Routine & Child Transit Safety",
+      "source_path": "SchoolSync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "backpack-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "lunchbox-dock",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "doorway-sentinel",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "transit-beacon",
+          "roles": [
+            "observe",
+            "reason",
+            "coordinate"
+          ]
+        }
+      ]
     }
   ]
 }
