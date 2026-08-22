@@ -37,6 +37,7 @@
     {"id":"phase-scope","domain":"energy","roles":["observe","reason","coordinate"]},
     {"id":"pollen-pixel","domain":"air-quality","roles":["observe","reason"]},
     {"id":"phyto-pulse","domain":"plant-science","roles":["observe","reason","act"]},
+    {"id":"pipe-halo","domain":"infrastructure-network","roles":["observe","reason","coordinate"]},
     {"id":"ping-caliper","domain":"materials","roles":["observe","reason"]},
     {"id":"plume-sniffer","domain":"analytical-chemistry","roles":["observe","reason","act"]},
     {"id":"pulse-hound","domain":"radio","roles":["observe","reason","act","coordinate"]},

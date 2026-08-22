@@ -1990,6 +1990,50 @@
           ]
         }
       ]
+    },
+    {
+      "id": "UroSync",
+      "title": "UroSync",
+      "domain": "Bathroom Health & Urinary Wellness",
+      "source_path": "UroSync",
+      "nodes": [
+        {
+          "id": "mirror-hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "toilet-dock-analyzer",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "night-safety-mat",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hydration-bottle-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "bath-sentinel",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        }
+      ]
     }
   ]
 }
