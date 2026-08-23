@@ -52,6 +52,7 @@
     {"id":"sonar-cast","domain":"water-mapping","roles":["observe","reason","coordinate"]},
     {"id":"spectra-charm","domain":"analytical-chemistry","roles":["observe","reason","act"]},
     {"id":"spiro-flow","domain":"health","roles":["observe","reason","coordinate"]},
+    {"id":"stoma-clip","domain":"plant-science","roles":["observe","reason","act"]},
     {"id":"taste-bead","domain":"analytical-chemistry","roles":["observe","reason"]},
     {"id":"terra-pin","domain":"agriculture-network","roles":["observe","reason","coordinate"]},
     {"id":"therma-weave","domain":"wearable-control","roles":["observe","reason","act","coordinate"]},

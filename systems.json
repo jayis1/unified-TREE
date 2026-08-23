@@ -678,6 +678,48 @@
       ]
     },
     {
+      "id": "PeriodSync",
+      "title": "PeriodSync",
+      "domain": "Menstrual Health, Pain Relief & Leak Prevention",
+      "source_path": "PeriodSync",
+      "nodes": [
+        {
+          "id": "flow-clip",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "relief-belt",
+          "roles": [
+            "act"
+          ]
+        },
+        {
+          "id": "strip-reader",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "temp-patch",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
       "id": "PestSync",
       "title": "PestSync",
       "domain": "Home Pest Detection & Deterrence",
