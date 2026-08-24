@@ -338,6 +338,49 @@
       ]
     },
     {
+      "id": "FoodAllergySync",
+      "title": "FoodAllergySync",
+      "domain": "Food Allergy Safety",
+      "source_path": "FoodAllergySync",
+      "nodes": [
+        {
+          "id": "epipen-guard",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "meal-scanner",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "safe-lunch-beacon",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "strip-reader-dock",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
       "id": "GlucoSync",
       "title": "GlucoSync",
       "domain": "Diabetes & Metabolic Health",

@@ -10,6 +10,7 @@
     {"id":"cor-sono","domain":"health","roles":["observe","reason"]},
     {"id":"dent-scope","domain":"materials","roles":["observe","reason","act"]},
     {"id":"dew-lapse","domain":"atmosphere","roles":["observe","reason","act"]},
+    {"id":"draft-ranger","domain":"building-envelope","roles":["observe","reason"]},
     {"id":"echo-mote","domain":"acoustics","roles":["observe","reason"]},
     {"id":"echo-trap","domain":"ecology-network","roles":["observe","reason","act","coordinate"]},
     {"id":"ferro-weave","domain":"materials","roles":["observe","reason","act"]},
