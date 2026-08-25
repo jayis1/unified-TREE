@@ -32,6 +32,7 @@
     {"id":"melody-sprite","domain":"creative-instrument","roles":["observe","reason","act"]},
     {"id":"mussel-watch","domain":"ecology-network","roles":["observe","reason","coordinate"]},
     {"id":"mycelium-node","domain":"bioprocess-control","roles":["observe","reason","act","coordinate"]},
+    {"id":"trap-sage","domain":"energy","roles":["observe","reason"]},
     {"id":"neuro-sense-puck","domain":"personal-environment","roles":["observe","reason","coordinate"]},
     {"id":"opti-rot","domain":"analytical-chemistry","roles":["observe","reason","act"]},
     {"id":"phase-lock","domain":"electronics","roles":["observe","reason","act"]},

@@ -721,6 +721,51 @@
       ]
     },
     {
+      "id": "MoldSync",
+      "title": "MoldSync",
+      "domain": "Home Moisture & Mold Prevention",
+      "source_path": "MoldSync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "inspection-wand",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "plumbing-interlock",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "room-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "vent-controller",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        }
+      ]
+    },
+    {
       "id": "PeriodSync",
       "title": "PeriodSync",
       "domain": "Menstrual Health, Pain Relief & Leak Prevention",
