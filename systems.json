@@ -2209,6 +2209,51 @@
           ]
         }
       ]
+    },
+    {
+      "id": "MobilitySync",
+      "title": "MobilitySync",
+      "domain": "Home Mobility & Accessibility",
+      "source_path": "MobilitySync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "smart-walker",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "transfer-mat",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "doorway-controller",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "wearable-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
     }
   ]
 }
