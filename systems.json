@@ -2254,6 +2254,43 @@
           ]
         }
       ]
+    },
+    {
+      "id": "CleanSync",
+      "title": "CleanSync",
+      "domain": "Home Cleaning & Hygiene",
+      "source_path": "CleanSync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "dirt-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "dock-controller",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "surface-wand",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
     }
   ]
 }

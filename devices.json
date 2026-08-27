@@ -63,7 +63,8 @@
     {"id":"vibra-beam","domain":"materials","roles":["observe","reason"]},
     {"id":"visco-shear","domain":"materials","roles":["observe","reason","act"]},
     {"id":"volt-scribe","domain":"analytical-chemistry","roles":["observe","reason","act"]},
-    {"id":"chloro-clip","domain":"plant-science","roles":["observe","reason"]}
+    {"id":"chloro-clip","domain":"plant-science","roles":["observe","reason"]},
+    {"id":"line-shepherd","domain":"cable-diagnostics","roles":["observe","reason"]}
   ]
 }
 
