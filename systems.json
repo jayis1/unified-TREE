@@ -2291,6 +2291,43 @@
           ]
         }
       ]
+    },
+    {
+      "id": "RoutineSync",
+      "title": "RoutineSync",
+      "domain": "Executive Function & ADHD Support",
+      "source_path": "RoutineSync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "doorway-dock",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "focus-beacon",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "object-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
     }
   ]
 }

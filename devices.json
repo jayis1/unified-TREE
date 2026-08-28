@@ -35,6 +35,7 @@
     {"id":"trap-sage","domain":"energy","roles":["observe","reason"]},
     {"id":"neuro-sense-puck","domain":"personal-environment","roles":["observe","reason","coordinate"]},
     {"id":"opti-rot","domain":"analytical-chemistry","roles":["observe","reason","act"]},
+    {"id":"panel-warden","domain":"electrical-maintenance","roles":["observe","reason","coordinate"]},
     {"id":"phase-lock","domain":"electronics","roles":["observe","reason","act"]},
     {"id":"phase-scope","domain":"energy","roles":["observe","reason","coordinate"]},
     {"id":"pollen-pixel","domain":"air-quality","roles":["observe","reason"]},
