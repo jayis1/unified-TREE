@@ -2,7 +2,7 @@
 
 **unified TREE** is the unifying web control plane for the complete and growing [SoC Device Inventions](https://github.com/jayis1/SoC-Device-Inventions) and [Devices](https://github.com/jayis1/Devices) repositories. Every current and future hardware design becomes a node; every multi-device system becomes a branch with child nodes. Together they form one interoperable tree of sensors, scientific instruments, controllers, hubs, interfaces, and gateways.
 
-> **Current snapshot:** 329 registered node types · 62 multi-node system branches · 2 source collections · 4 shared roles · no fixed fleet limit
+> **Current snapshot:** 335 registered node types · 63 multi-node system branches · 2 source collections · 4 shared roles · no fixed fleet limit
 
 **[Open the live dashboard](https://jayis1.github.io/unified-TREE/)** · [Install as an Android PWA](#web-app-and-android-pwa) · [Connect Home Assistant](#home-assistant-integration)
 
@@ -20,7 +20,7 @@ No device or system is replaced or hidden. Each remains independently buildable 
 
 [`devices.json`](./devices.json) registers the standalone inventions from SoC Device Inventions. [`systems.json`](./systems.json) registers every project from Devices as a branch and maps its firmware components as child nodes. Node identities are namespaced by collection and system, so repeated names such as `hub`, `room-sensor`, and `wearable-tag` remain unambiguous.
 
-The current Devices import adds 62 source project directories and 264 child node types. Those counts are discovered from the registries rather than imposed as limits; both collections can keep growing.
+The current Devices import adds 63 source project directories and 266 child node types. Those counts are discovered from the registries rather than imposed as limits; both collections can keep growing.
 
 ## Web app and Android PWA
 

@@ -2328,6 +2328,52 @@
           ]
         }
       ]
+    },
+    {
+      "id": "OutageSync",
+      "title": "OutageSync",
+      "domain": "Home Outage Resilience & Backup Orchestration",
+      "source_path": "OutageSync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "panel-controller",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "cold-chain-tag",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "outlet-node",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "fuel-sentinel",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        }
+      ]
     }
   ]
 }
