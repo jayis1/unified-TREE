@@ -66,7 +66,8 @@
     {"id":"volt-scribe","domain":"analytical-chemistry","roles":["observe","reason","act"]},
     {"id":"chloro-clip","domain":"plant-science","roles":["observe","reason"]},
     {"id":"line-shepherd","domain":"cable-diagnostics","roles":["observe","reason"]},
-    {"id":"chill-warden","domain":"refrigeration-maintenance","roles":["observe","reason"]}
+    {"id":"chill-warden","domain":"refrigeration-maintenance","roles":["observe","reason"]},
+    {"id":"pasture-pulse","domain":"agriculture-network","roles":["observe","reason"]}
   ]
 }
 

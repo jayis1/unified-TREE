@@ -2374,6 +2374,49 @@
           ]
         }
       ]
+    },
+    {
+      "id": "DrainSync",
+      "title": "DrainSync",
+      "domain": "Home Drain Health & Sewer Backup Prevention",
+      "source_path": "DrainSync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "under-sink-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "floor-drain-guard",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "main-stack-monitor",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "backwater-actuator",
+          "roles": [
+            "act"
+          ]
+        }
+      ]
     }
   ]
 }
