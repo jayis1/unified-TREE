@@ -67,7 +67,8 @@
     {"id":"chloro-clip","domain":"plant-science","roles":["observe","reason"]},
     {"id":"line-shepherd","domain":"cable-diagnostics","roles":["observe","reason"]},
     {"id":"chill-warden","domain":"refrigeration-maintenance","roles":["observe","reason"]},
-    {"id":"pasture-pulse","domain":"agriculture-network","roles":["observe","reason"]}
+    {"id":"pasture-pulse","domain":"agriculture-network","roles":["observe","reason"]},
+    {"id":"sump-shepherd","domain":"flood-risk-monitoring","roles":["observe","reason"]}
   ]
 }
 

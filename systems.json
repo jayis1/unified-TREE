@@ -921,6 +921,52 @@
       ]
     },
     {
+      "id": "PregnancySync",
+      "title": "PregnancySync",
+      "domain": "Prenatal Health & Pregnancy Support",
+      "source_path": "PregnancySync",
+      "nodes": [
+        {
+          "id": "hub-gateway",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "belly-band",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "smart-bp-cuff",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "strip-reader-dock",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "sleep-pad",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        }
+      ]
+    },
+    {
       "id": "QuakeGuard",
       "title": "QuakeGuard",
       "domain": "Earthquake Safety & Structural Health",
