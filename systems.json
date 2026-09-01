@@ -2463,6 +2463,51 @@
           ]
         }
       ]
+    },
+    {
+      "id": "CommuteSync",
+      "title": "CommuteSync",
+      "domain": "Daily Commuting Orchestration, Safety & Exposure Management",
+      "source_path": "CommuteSync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "entry-dock",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "bag-tag",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "mobility-beacon",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "desk-dock",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
     }
   ]
 }
