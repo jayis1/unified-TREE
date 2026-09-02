@@ -2508,6 +2508,51 @@
           ]
         }
       ]
+    },
+    {
+      "id": "SickDaySync",
+      "title": "SickDaySync",
+      "domain": "Home Illness Recovery",
+      "source_path": "SickDaySync",
+      "nodes": [
+        {
+          "id": "care-hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "recovery-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "room-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "med-station",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "vent-controller",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        }
+      ]
     }
   ]
 }
