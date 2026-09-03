@@ -2553,6 +2553,49 @@
           ]
         }
       ]
+    },
+    {
+      "id": "CarSeatSync",
+      "title": "CarSeatSync",
+      "domain": "Child Vehicle Safety",
+      "source_path": "CarSeatSync",
+      "nodes": [
+        {
+          "id": "vehicle-hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "safelatch-clip",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "cabin-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "child-band",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        },
+        {
+          "id": "handoff-beacon",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
     }
   ]
 }
