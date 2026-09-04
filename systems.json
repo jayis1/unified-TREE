@@ -2596,6 +2596,47 @@
           ]
         }
       ]
+    },
+    {
+      "id": "WellSync",
+      "title": "WellSync",
+      "domain": "Private Well Water Safety",
+      "source_path": "WellSync",
+      "nodes": [
+        {
+          "id": "hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "inline-water-quality",
+          "roles": [
+            "observe"
+          ]
+        },
+        {
+          "id": "pump-controller",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "tap-sentinel",
+          "roles": [
+            "observe"
+          ]
+        },
+        {
+          "id": "weather-sentinel",
+          "roles": [
+            "observe"
+          ]
+        }
+      ]
     }
   ]
 }
