@@ -496,6 +496,50 @@
       ]
     },
     {
+      "id": "HandiSync",
+      "title": "HandiSync",
+      "domain": "Daily-Living Accessibility",
+      "source_path": "handisync",
+      "nodes": [
+        {
+          "id": "access-actuator",
+          "roles": [
+            "observe",
+            "act"
+          ]
+        },
+        {
+          "id": "appliance-dock",
+          "roles": [
+            "observe",
+            "act"
+          ]
+        },
+        {
+          "id": "assist-hub",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "smart-grip",
+          "roles": [
+            "observe",
+            "reason",
+            "act"
+          ]
+        },
+        {
+          "id": "voice-gesture-sentinel",
+          "roles": [
+            "observe",
+            "reason"
+          ]
+        }
+      ]
+    },
+    {
       "id": "HiveSync",
       "title": "HiveSync",
       "domain": "Beekeeping & Pollinator Health",

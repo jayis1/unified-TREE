@@ -72,7 +72,8 @@
     {"id":"tensi-bead","domain":"analytical-chemistry","roles":["observe","reason","act"]},
     {"id":"mold-scout","domain":"building-diagnostics","roles":["observe","reason"]},
     {"id":"torque-pebble","domain":"assembly-quality","roles":["observe","reason"]},
-    {"id":"relay-finch","domain":"electrical-maintenance","roles":["observe","reason","act"]}
+    {"id":"relay-finch","domain":"electrical-maintenance","roles":["observe","reason","act"]},
+    {"id":"kernel-scout","domain":"grain-storage","roles":["observe","reason"]}
   ]
 }
 
