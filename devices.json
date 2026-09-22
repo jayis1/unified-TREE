@@ -73,7 +73,10 @@
     {"id":"mold-scout","domain":"building-diagnostics","roles":["observe","reason"]},
     {"id":"torque-pebble","domain":"assembly-quality","roles":["observe","reason"]},
     {"id":"relay-finch","domain":"electrical-maintenance","roles":["observe","reason","act"]},
-    {"id":"kernel-scout","domain":"grain-storage","roles":["observe","reason"]}
+    {"id":"kernel-scout","domain":"grain-storage","roles":["observe","reason"]},
+    {"id":"seal-whisper","domain":"package-inspection","roles":["observe","reason","act","coordinate"]},
+    {"id":"static-sentinel","domain":"electrical-maintenance","roles":["observe","reason","act"]},
+    {"id":"curb-cue","domain":"accessibility","roles":["observe","reason","act"]}
   ]
 }
 

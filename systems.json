@@ -2681,6 +2681,45 @@
           ]
         }
       ]
+    },
+    {
+      "id": "MaintainSync",
+      "title": "MaintainSync",
+      "domain": "Predictive Home Maintenance & Repair Prevention",
+      "source_path": "maintainsync",
+      "nodes": [
+        {"id": "maintain-hub", "roles": ["reason", "coordinate"]},
+        {"id": "condition-tag", "roles": ["observe"]},
+        {"id": "inspection-wand", "roles": ["observe", "reason"]},
+        {"id": "utility-sentinel", "roles": ["observe", "act"]},
+        {"id": "filter-drain-dock", "roles": ["observe"]}
+      ]
+    },
+    {
+      "id": "WorkshopSync",
+      "title": "WorkshopSync",
+      "domain": "Home Workshop Safety & Skill Support",
+      "source_path": "workshopsync",
+      "nodes": [
+        {"id": "workshop-hub", "roles": ["coordinate"]},
+        {"id": "tool-dock", "roles": ["observe"]},
+        {"id": "air-sentinel", "roles": ["observe"]},
+        {"id": "ppe-tag", "roles": ["observe"]},
+        {"id": "bench-mat", "roles": ["observe"]}
+      ]
+    },
+    {
+      "id": "SensorySync",
+      "title": "SensorySync",
+      "domain": "Sensory-Accessible Space Regulation",
+      "source_path": "sensorysync",
+      "nodes": [
+        {"id": "sensory-hub", "roles": ["coordinate"]},
+        {"id": "room-beacon", "roles": ["observe"]},
+        {"id": "comfort-band", "roles": ["observe"]},
+        {"id": "ambient-controller", "roles": ["act"]},
+        {"id": "quiet-pod", "roles": ["act"]}
+      ]
     }
   ]
 }
