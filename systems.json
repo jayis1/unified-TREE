@@ -2720,6 +2720,18 @@
         {"id": "ambient-controller", "roles": ["act"]},
         {"id": "quiet-pod", "roles": ["act"]}
       ]
+    },
+    {
+      "id": "hygieneguard",
+      "title": "HygieneGuard",
+      "domain": "Household Hygiene Readiness",
+      "source_path": "hygieneguard",
+      "nodes": [
+        {"id": "hygiene-hub", "roles": ["reason", "coordinate"]},
+        {"id": "sink-sentinel", "roles": ["observe"]},
+        {"id": "smart-dispenser", "roles": ["observe"]},
+        {"id": "door-beacon", "roles": ["observe", "act"]}
+      ]
     }
   ]
 }

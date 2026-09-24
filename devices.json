@@ -76,7 +76,8 @@
     {"id":"kernel-scout","domain":"grain-storage","roles":["observe","reason"]},
     {"id":"seal-whisper","domain":"package-inspection","roles":["observe","reason","act","coordinate"]},
     {"id":"static-sentinel","domain":"electrical-maintenance","roles":["observe","reason","act"]},
-    {"id":"curb-cue","domain":"accessibility","roles":["observe","reason","act"]}
+    {"id":"curb-cue","domain":"accessibility","roles":["observe","reason","act"]},
+    {"id":"wheel-whisper","domain":"bicycle-maintenance","roles":["observe","reason","act"]}
   ]
 }
 
