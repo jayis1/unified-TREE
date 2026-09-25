@@ -2732,6 +2732,19 @@
         {"id": "smart-dispenser", "roles": ["observe"]},
         {"id": "door-beacon", "roles": ["observe", "act"]}
       ]
+    },
+    {
+      "id": "tactilesync",
+      "title": "TactileSync",
+      "domain": "Deafblind Home Orientation & Communication",
+      "source_path": "tactilesync",
+      "nodes": [
+        {"id": "tactile-hub", "roles": ["reason", "coordinate"]},
+        {"id": "haptic-band", "roles": ["observe", "act"]},
+        {"id": "room-anchor", "roles": ["observe"]},
+        {"id": "door-navigator", "roles": ["observe", "act"]},
+        {"id": "appliance-marker", "roles": ["observe", "act"]}
+      ]
     }
   ]
 }
