@@ -80,7 +80,8 @@
     {"id":"wheel-whisper","domain":"bicycle-maintenance","roles":["observe","reason","act"]},
     {"id":"filter-finch","domain":"air-quality","roles":["observe","reason"]},
     {"id":"bench-buddy","domain":"cable-diagnostics","roles":["observe","reason"]},
-    {"id":"rain-gauge-keeper","domain":"agriculture-network","roles":["observe","reason"]}
+    {"id":"rain-gauge-keeper","domain":"agriculture-network","roles":["observe","reason"]},
+    {"id":"loom-latch","domain":"textile-weaving","roles":["observe","reason"]}
   ]
 }
 

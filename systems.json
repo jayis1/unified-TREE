@@ -2791,6 +2791,17 @@
         {"id": "intake-node", "roles": ["observe"]},
         {"id": "mobile-client", "roles": ["coordinate"]}
       ]
+    },
+    {
+      "id": "queuekind",
+      "title": "QueueKind — private, live wait estimates for community service sites",
+      "domain": "Public-Service Queue Access",
+      "source_path": "queuekind",
+      "nodes": [
+        {"id": "hub-display", "roles": ["reason", "coordinate"]},
+        {"id": "door-counter", "roles": ["observe"]},
+        {"id": "desk-button", "roles": ["observe"]}
+      ]
     }
   ]
 }
