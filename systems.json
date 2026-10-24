@@ -2802,6 +2802,18 @@
         {"id": "door-counter", "roles": ["observe"]},
         {"id": "desk-button", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "repair-loop",
+      "title": "RepairLoop — community repair-space readiness",
+      "domain": "Community Repair-Space Readiness",
+      "source_path": "RepairLoop",
+      "nodes": [
+        {"id": "air-sentinel", "roles": ["observe"]},
+        {"id": "bench-sensor", "roles": ["observe"]},
+        {"id": "hub", "roles": ["coordinate"]},
+        {"id": "tool-dock", "roles": ["observe"]}
+      ]
     }
   ]
 }
