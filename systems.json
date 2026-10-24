@@ -2745,6 +2745,17 @@
         {"id": "door-navigator", "roles": ["observe", "act"]},
         {"id": "appliance-marker", "roles": ["observe", "act"]}
       ]
+    },
+    {
+      "id": "heat-relief-network",
+      "title": "Heat Relief Network",
+      "domain": "Community Heatwave Readiness & Cooling-Site Coordination",
+      "source_path": "heat-relief-network",
+      "nodes": [
+        {"id": "climate-node", "roles": ["observe", "reason"]},
+        {"id": "supply-node", "roles": ["observe", "reason"]},
+        {"id": "site-gateway", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }
