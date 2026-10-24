@@ -2768,6 +2768,17 @@
         {"id": "fridge-sentinel", "roles": ["observe"]},
         {"id": "intake-dock", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "LibraryLoop",
+      "title": "LibraryLoop",
+      "domain": "Shared Library & Community Study-Space Availability",
+      "source_path": "LibraryLoop",
+      "nodes": [
+        {"id": "site-hub", "roles": ["reason", "coordinate"]},
+        {"id": "seat-cluster", "roles": ["observe", "reason"]},
+        {"id": "doorway-counter", "roles": ["observe", "reason"]}
+      ]
     }
   ]
 }

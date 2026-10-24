@@ -78,7 +78,8 @@
     {"id":"static-sentinel","domain":"electrical-maintenance","roles":["observe","reason","act"]},
     {"id":"curb-cue","domain":"accessibility","roles":["observe","reason","act"]},
     {"id":"wheel-whisper","domain":"bicycle-maintenance","roles":["observe","reason","act"]},
-    {"id":"filter-finch","domain":"air-quality","roles":["observe","reason"]}
+    {"id":"filter-finch","domain":"air-quality","roles":["observe","reason"]},
+    {"id":"bench-buddy","domain":"cable-diagnostics","roles":["observe","reason"]}
   ]
 }
 
