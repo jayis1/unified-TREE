@@ -2756,6 +2756,18 @@
         {"id": "supply-node", "roles": ["observe", "reason"]},
         {"id": "site-gateway", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "pantry-link",
+      "title": "PantryLink",
+      "domain": "Community Food Pantry & Cold-Chain Coordination",
+      "source_path": "pantry-link",
+      "nodes": [
+        {"id": "site-hub", "roles": ["coordinate"]},
+        {"id": "shelf-scale", "roles": ["observe"]},
+        {"id": "fridge-sentinel", "roles": ["observe"]},
+        {"id": "intake-dock", "roles": ["observe"]}
+      ]
     }
   ]
 }
