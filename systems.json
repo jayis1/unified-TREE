@@ -2779,6 +2779,18 @@
         {"id": "seat-cluster", "roles": ["observe", "reason"]},
         {"id": "doorway-counter", "roles": ["observe", "reason"]}
       ]
+    },
+    {
+      "id": "ToolShare",
+      "title": "ToolShare",
+      "domain": "Community Tool Library Inventory & Coordination",
+      "source_path": "ToolShare",
+      "nodes": [
+        {"id": "hub", "roles": ["reason", "coordinate"]},
+        {"id": "shelf-scale", "roles": ["observe"]},
+        {"id": "intake-node", "roles": ["observe"]},
+        {"id": "mobile-client", "roles": ["coordinate"]}
+      ]
     }
   ]
 }
