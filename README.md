@@ -2,7 +2,7 @@
 
 **unified TREE** is the unifying web control plane for the complete and growing [SoC Device Inventions](https://github.com/jayis1/SoC-Device-Inventions) and [Devices](https://github.com/jayis1/Devices) repositories. Every current and future hardware design becomes a node; every multi-device system becomes a branch with child nodes. Together they form one interoperable tree of sensors, scientific instruments, controllers, hubs, interfaces, and gateways.
 
-> **Current snapshot:** 439 registered node types · 83 multi-node system branches · 2 source collections · 4 shared roles · no fixed fleet limit
+> **Current snapshot:** 451 registered node types · 85 multi-node system branches · 2 source collections · 4 shared roles · no fixed fleet limit
 
 **[Open the live dashboard](https://jayis1.github.io/unified-TREE/)** · [Install as an Android PWA](#web-app-and-android-pwa) · [Connect Home Assistant](#home-assistant-integration)
 

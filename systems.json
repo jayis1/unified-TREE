@@ -2850,6 +2850,18 @@
         {"id": "ppe-tag", "roles": ["observe"]},
         {"id": "bench-mat", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "curbcue",
+      "title": "CurbCue",
+      "domain": "Accessible Sidewalk Hazard Coordination",
+      "source_path": "curbcue",
+      "nodes": [
+        {"id": "curb-node", "roles": ["observe", "reason"]},
+        {"id": "crossing-button", "roles": ["observe"]},
+        {"id": "site-hub", "roles": ["reason", "coordinate"]},
+        {"id": "route-beacon", "roles": ["observe", "act"]}
+      ]
     }
   ]
 }
