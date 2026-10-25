@@ -2862,6 +2862,17 @@
         {"id": "site-hub", "roles": ["reason", "coordinate"]},
         {"id": "route-beacon", "roles": ["observe", "act"]}
       ]
+    },
+    {
+      "id": "liftlink",
+      "title": "LiftLink — accessible transit lift status",
+      "domain": "Transit Elevator Availability & Accessibility",
+      "source_path": "liftlink",
+      "nodes": [
+        {"id": "lift-sentinel", "roles": ["observe", "reason"]},
+        {"id": "site-hub", "roles": ["reason", "coordinate"]},
+        {"id": "landing-beacon", "roles": ["observe", "act"]}
+      ]
     }
   ]
 }
