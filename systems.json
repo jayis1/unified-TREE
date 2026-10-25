@@ -2885,6 +2885,17 @@
         {"id": "fridge-sentinel", "roles": ["observe"]},
         {"id": "pantry-station", "roles": ["coordinate"]}
       ]
+    },
+    {
+      "id": "refill-ready",
+      "title": "RefillReady",
+      "domain": "Public Drinking Fountain & Bottle-Refill Station Readiness",
+      "source_path": "refill-ready",
+      "nodes": [
+        {"id": "fixture-node", "roles": ["observe", "reason"]},
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "path-check-node", "roles": ["observe", "reason"]}
+      ]
     }
   ]
 }

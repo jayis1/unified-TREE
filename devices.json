@@ -87,7 +87,8 @@
     {"id":"shutter-tick","domain":"camera-maintenance","roles":["observe","reason"]},
     {"id":"dial-reader","domain":"instrumentation","roles":["observe","reason"]},
     {"id":"resistor-lens","domain":"electronics","roles":["observe","reason"]},
-    {"id":"page-stepper","domain":"accessibility","roles":["observe","reason"]}
+    {"id":"page-stepper","domain":"accessibility","roles":["observe","reason"]},
+    {"id":"spool-scout","domain":"fabrication","roles":["observe","reason"]}
   ]
 }
 
