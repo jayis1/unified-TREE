@@ -2873,6 +2873,18 @@
         {"id": "site-hub", "roles": ["reason", "coordinate"]},
         {"id": "landing-beacon", "roles": ["observe", "act"]}
       ]
+    },
+    {
+      "id": "mealbridge",
+      "title": "MealBridge — shared-kitchen coordination without tracking people",
+      "domain": "Shared-Kitchen Inventory & Food-Waste Coordination",
+      "source_path": "mealbridge",
+      "nodes": [
+        {"id": "hub", "roles": ["reason", "coordinate"]},
+        {"id": "shelf-scale", "roles": ["observe"]},
+        {"id": "fridge-sentinel", "roles": ["observe"]},
+        {"id": "pantry-station", "roles": ["coordinate"]}
+      ]
     }
   ]
 }
