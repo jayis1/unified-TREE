@@ -2825,6 +2825,18 @@
         {"id": "bin-sentinel", "roles": ["observe"]},
         {"id": "gateway", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "commonsignal",
+      "title": "CommonSignal — accessible community-room readiness",
+      "domain": "Community Room Readiness & Accessibility",
+      "source_path": "commonsignal",
+      "nodes": [
+        {"id": "hub", "roles": ["reason", "coordinate"]},
+        {"id": "route-sentinel", "roles": ["observe"]},
+        {"id": "equipment-tag", "roles": ["observe"]},
+        {"id": "climate-node", "roles": ["observe"]}
+      ]
     }
   ]
 }
