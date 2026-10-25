@@ -2814,6 +2814,17 @@
         {"id": "hub", "roles": ["coordinate"]},
         {"id": "tool-dock", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "park-pulse",
+      "title": "ParkPulse",
+      "domain": "Public Park Maintenance",
+      "source_path": "park-pulse",
+      "nodes": [
+        {"id": "fountain-sentinel", "roles": ["observe"]},
+        {"id": "bin-sentinel", "roles": ["observe"]},
+        {"id": "gateway", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }
