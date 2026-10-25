@@ -2896,6 +2896,17 @@
         {"id": "gateway", "roles": ["reason", "coordinate"]},
         {"id": "path-check-node", "roles": ["observe", "reason"]}
       ]
+    },
+    {
+      "id": "shelter-signal",
+      "title": "ShelterSignal",
+      "domain": "Transit Shelter Readiness",
+      "source_path": "shelter-signal",
+      "nodes": [
+        {"id": "site-gateway", "roles": ["reason", "coordinate"]},
+        {"id": "shelter-node", "roles": ["observe"]},
+        {"id": "approach-node", "roles": ["observe"]}
+      ]
     }
   ]
 }
