@@ -2837,6 +2837,19 @@
         {"id": "equipment-tag", "roles": ["observe"]},
         {"id": "climate-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "workshopsync",
+      "title": "WorkshopSync",
+      "domain": "Home Workshop Safety & Skill Support",
+      "source_path": "workshopsync",
+      "nodes": [
+        {"id": "workshop-hub", "roles": ["coordinate"]},
+        {"id": "tool-dock", "roles": ["observe"]},
+        {"id": "air-sentinel", "roles": ["observe"]},
+        {"id": "ppe-tag", "roles": ["observe"]},
+        {"id": "bench-mat", "roles": ["observe"]}
+      ]
     }
   ]
 }
