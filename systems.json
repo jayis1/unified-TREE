@@ -2907,6 +2907,16 @@
         {"id": "shelter-node", "roles": ["observe"]},
         {"id": "approach-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "civiccharge",
+      "title": "CivicCharge",
+      "domain": "Public Charging Infrastructure",
+      "source_path": "civiccharge",
+      "nodes": [
+        {"id": "outlet-monitor", "roles": ["observe"]},
+        {"id": "site-gateway", "roles": ["coordinate"]}
+      ]
     }
   ]
 }
