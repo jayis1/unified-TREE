@@ -2917,6 +2917,17 @@
         {"id": "outlet-monitor", "roles": ["observe"]},
         {"id": "site-gateway", "roles": ["coordinate"]}
       ]
+    },
+    {
+      "id": "aed-ready",
+      "title": "AEDReady — community AED cabinet readiness network",
+      "domain": "Community AED Cabinet Readiness Monitoring",
+      "source_path": "aed-ready",
+      "nodes": [
+        {"id": "site-gateway", "roles": ["reason", "coordinate"]},
+        {"id": "cabinet-sentinel", "roles": ["observe", "reason"]},
+        {"id": "inspection-beacon", "roles": ["observe"]}
+      ]
     }
   ]
 }
