@@ -2928,6 +2928,16 @@
         {"id": "cabinet-sentinel", "roles": ["observe", "reason"]},
         {"id": "inspection-beacon", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "SpinShare",
+      "title": "SpinShare — shared laundry availability system",
+      "domain": "Shared Laundry Availability",
+      "source_path": "SpinShare",
+      "nodes": [
+        {"id": "machine-sensor", "roles": ["observe", "reason"]},
+        {"id": "room-gateway", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }

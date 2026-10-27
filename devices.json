@@ -90,7 +90,8 @@
     {"id":"page-stepper","domain":"accessibility","roles":["observe","reason"]},
     {"id":"spool-scout","domain":"fabrication","roles":["observe","reason"]},
     {"id":"key-travel","domain":"mechanical-testing","roles":["observe"]},
-    {"id":"escapement-ear","domain":"mechanical-testing","roles":["observe","reason"]}
+    {"id":"escapement-ear","domain":"mechanical-testing","roles":["observe","reason"]},
+    {"id":"film-gate","domain":"optics","roles":["observe","reason","act"]}
   ]
 }
 
