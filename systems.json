@@ -2960,6 +2960,17 @@
         {"id": "doorway-sensor", "roles": ["observe"]},
         {"id": "shelf-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "marketchill",
+      "title": "MarketChill — vendor cold-chain exception coordination",
+      "domain": "Portable Market Cold-Chain Monitoring",
+      "source_path": "MarketChill",
+      "nodes": [
+        {"id": "hub", "roles": ["observe", "reason", "act", "coordinate"]},
+        {"id": "probe", "roles": ["observe"]},
+        {"id": "door", "roles": ["observe"]}
+      ]
     }
   ]
 }
