@@ -2971,6 +2971,17 @@
         {"id": "probe", "roles": ["observe"]},
         {"id": "door", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "reuse-relay",
+      "title": "ReuseRelay",
+      "domain": "Community Reuse & Move-Out Coordination",
+      "source_path": "reuse-relay",
+      "nodes": [
+        {"id": "site-hub", "roles": ["reason", "coordinate"]},
+        {"id": "staging-node", "roles": ["observe"]},
+        {"id": "pickup-node", "roles": ["observe"]}
+      ]
     }
   ]
 }

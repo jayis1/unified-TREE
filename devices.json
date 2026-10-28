@@ -94,7 +94,8 @@
     {"id":"film-gate","domain":"optics","roles":["observe","reason","act"]},
     {"id":"bounce-bench","domain":"mechanical-testing","roles":["observe"]},
     {"id":"morse-mate","domain":"accessibility","roles":["observe","reason","act"]},
-    {"id":"darkroom-dose","domain":"optics","roles":["observe","reason","act"]}
+    {"id":"darkroom-dose","domain":"optics","roles":["observe","reason","act"]},
+    {"id":"pour-ledger","domain":"food-process","roles":["observe","reason"]}
   ]
 }
 
