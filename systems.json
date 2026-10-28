@@ -2938,6 +2938,17 @@
         {"id": "machine-sensor", "roles": ["observe", "reason"]},
         {"id": "room-gateway", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "cupcycle",
+      "title": "CupCycle — shared reusable-cup return and wash readiness",
+      "domain": "Reusable Cup Return & Wash Readiness",
+      "source_path": "cupcycle",
+      "nodes": [
+        {"id": "site-hub", "roles": ["reason", "coordinate"]},
+        {"id": "return-chute", "roles": ["observe", "reason"]},
+        {"id": "wash-rack", "roles": ["observe"]}
+      ]
     }
   ]
 }
