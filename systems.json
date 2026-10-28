@@ -2949,6 +2949,17 @@
         {"id": "return-chute", "roles": ["observe", "reason"]},
         {"id": "wash-rack", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "parcel-pause",
+      "title": "ParcelPause",
+      "domain": "Shared Package-Room Operations",
+      "source_path": "parcel-pause",
+      "nodes": [
+        {"id": "hub", "roles": ["reason", "coordinate"]},
+        {"id": "doorway-sensor", "roles": ["observe"]},
+        {"id": "shelf-node", "roles": ["observe"]}
+      ]
     }
   ]
 }
