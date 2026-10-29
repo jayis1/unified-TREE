@@ -102,7 +102,8 @@
     {"id":"coil-clock","domain":"mechanical-testing","roles":["observe","reason"]},
     {"id":"slide-scout","domain":"optics","roles":["observe","reason"]},
     {"id":"knot-witness","domain":"mechanical-testing","roles":["observe","reason"]},
-    {"id":"edge-tally","domain":"mechanical-testing","roles":["observe","reason"]}
+    {"id":"edge-tally","domain":"mechanical-testing","roles":["observe","reason"]},
+    {"id":"fold-ledger","domain":"instrumentation","roles":["observe","reason"]}
   ]
 }
 

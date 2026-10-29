@@ -3081,6 +3081,17 @@
         {"id": "printer-observer", "roles": ["observe"]},
         {"id": "filament-sentinel", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "airshare",
+      "title": "AirShare",
+      "domain": "Shared-Room Ventilation Context",
+      "source_path": "airshare",
+      "nodes": [
+        {"id": "hub", "roles": ["reason", "coordinate"]},
+        {"id": "room-sentinel", "roles": ["observe"]},
+        {"id": "doorway-context-node", "roles": ["observe"]}
+      ]
     }
   ]
 }
