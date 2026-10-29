@@ -3070,6 +3070,17 @@
         {"id": "root-zone-probe", "roles": ["observe"]},
         {"id": "weather-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "printshare",
+      "title": "PrintShare",
+      "domain": "Community 3D Printer Readiness",
+      "source_path": "printshare",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "printer-observer", "roles": ["observe"]},
+        {"id": "filament-sentinel", "roles": ["observe"]}
+      ]
     }
   ]
 }

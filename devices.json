@@ -3,6 +3,7 @@
   "devices": [
     {"id":"aero-cast","domain":"atmosphere","roles":["observe","reason"]},
     {"id":"aero-reed","domain":"creative-instrument","roles":["observe","reason","act"]},
+    {"id":"beat-window","domain":"mechanical-testing","roles":["observe"]},
     {"id":"bolt-compass","domain":"weather-network","roles":["observe","reason","coordinate"]},
     {"id":"bone-echo","domain":"health","roles":["observe","reason"]},
     {"id":"brew-sense","domain":"food-process","roles":["observe","reason","coordinate"]},
