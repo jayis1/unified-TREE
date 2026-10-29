@@ -3048,6 +3048,17 @@
         {"id": "intake-dock", "roles": ["coordinate"]},
         {"id": "gateway", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "filter-share",
+      "title": "FilterShare — community air-cleaner lending and service coordination",
+      "domain": "Community Air-Cleaner Lending & Filter Service",
+      "source_path": "filter-share",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "sentinel", "roles": ["observe"]},
+        {"id": "dock", "roles": ["observe", "reason"]}
+      ]
     }
   ]
 }

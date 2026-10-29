@@ -99,7 +99,8 @@
     {"id":"loom-mark","domain":"textile-weaving","roles":["observe"]},
     {"id":"tank-tally","domain":"film-development","roles":["observe","reason"]},
     {"id":"coil-clock","domain":"mechanical-testing","roles":["observe","reason"]},
-    {"id":"slide-scout","domain":"optics","roles":["observe","reason"]}
+    {"id":"slide-scout","domain":"optics","roles":["observe","reason"]},
+    {"id":"knot-witness","domain":"mechanical-testing","roles":["observe","reason"]}
   ]
 }
 
