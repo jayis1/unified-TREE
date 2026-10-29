@@ -3059,6 +3059,17 @@
         {"id": "sentinel", "roles": ["observe"]},
         {"id": "dock", "roles": ["observe", "reason"]}
       ]
+    },
+    {
+      "id": "tree-tender",
+      "title": "TreeTender",
+      "domain": "Community Urban Forestry",
+      "source_path": "tree-tender",
+      "nodes": [
+        {"id": "site-gateway", "roles": ["reason", "coordinate"]},
+        {"id": "root-zone-probe", "roles": ["observe"]},
+        {"id": "weather-node", "roles": ["observe"]}
+      ]
     }
   ]
 }
