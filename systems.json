@@ -2982,6 +2982,17 @@
         {"id": "staging-node", "roles": ["observe"]},
         {"id": "pickup-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "coolstop",
+      "title": "CoolStop — community cooling-site readiness",
+      "domain": "Community Cooling-Site Readiness",
+      "source_path": "coolstop",
+      "nodes": [
+        {"id": "climate-node", "roles": ["observe"]},
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "supply-node", "roles": ["observe"]}
+      ]
     }
   ]
 }
