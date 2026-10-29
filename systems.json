@@ -3025,6 +3025,17 @@
         {"id": "gateway", "roles": ["reason", "coordinate"]},
         {"id": "supply-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "snowshare",
+      "title": "SnowShare",
+      "domain": "Community Winter Accessibility",
+      "source_path": "snowshare",
+      "nodes": [
+        {"id": "ramp-node", "roles": ["observe"]},
+        {"id": "weather-node", "roles": ["observe"]},
+        {"id": "site-gateway", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }
