@@ -3036,6 +3036,18 @@
         {"id": "weather-node", "roles": ["observe"]},
         {"id": "site-gateway", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "commonshelf",
+      "title": "CommonShelf — community pantry stock and cold-chain coordination",
+      "domain": "Community Pantry Stock & Cold-Chain Coordination",
+      "source_path": "commonshelf",
+      "nodes": [
+        {"id": "shelf-scale", "roles": ["observe"]},
+        {"id": "fridge-sentinel", "roles": ["observe"]},
+        {"id": "intake-dock", "roles": ["coordinate"]},
+        {"id": "gateway", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }
