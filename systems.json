@@ -3103,6 +3103,17 @@
         {"id": "room-sentinel", "roles": ["observe"]},
         {"id": "doorway-context-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "seedshare",
+      "title": "SeedShare — community seed-library stewardship",
+      "domain": "Community Seed-Library Stewardship",
+      "source_path": "seedshare",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "storage-node", "roles": ["observe"]},
+        {"id": "intake-dock", "roles": ["observe"]}
+      ]
     }
   ]
 }
