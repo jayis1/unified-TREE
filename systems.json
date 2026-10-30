@@ -2848,6 +2848,17 @@
       ]
     },
     {
+      "id": "community-repair",
+      "title": "CommunityRepair",
+      "domain": "Community Bicycle Repair Infrastructure",
+      "source_path": "community-repair",
+      "nodes": [
+        {"id": "tool-dock", "roles": ["observe"]},
+        {"id": "pump-monitor", "roles": ["observe"]},
+        {"id": "site-gateway", "roles": ["coordinate"]}
+      ]
+    },
+    {
       "id": "park-pulse",
       "title": "ParkPulse",
       "domain": "Public Park Maintenance",
