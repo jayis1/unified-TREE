@@ -3125,6 +3125,17 @@
         {"id": "bloom-checkin", "roles": ["observe"]},
         {"id": "site-gateway", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "buspulse",
+      "title": "BusPulse",
+      "domain": "Transit Display Maintenance Telemetry",
+      "source_path": "buspulse",
+      "nodes": [
+        {"id": "display-observer", "roles": ["observe"]},
+        {"id": "power-weather", "roles": ["observe"]},
+        {"id": "gateway", "roles": ["coordinate"]}
+      ]
     }
   ]
 }
