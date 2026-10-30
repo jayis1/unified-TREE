@@ -107,7 +107,8 @@
     {"id":"fold-ledger","domain":"instrumentation","roles":["observe","reason"]},
     {"id":"warp-meter","domain":"textile testing","roles":["observe"]},
     {"id":"spine-press-witness","domain":"bookbinding","roles":["observe"]},
-    {"id":"paper-bias","domain":"mechanical-testing","roles":["observe","reason"]}
+    {"id":"paper-bias","domain":"mechanical-testing","roles":["observe","reason"]},
+    {"id":"seed-counter","domain":"agriculture","roles":["observe"]}
   ]
 }
 

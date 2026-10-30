@@ -3158,6 +3158,17 @@
         {"id": "shade-node", "roles": ["observe"]},
         {"id": "surface-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "bookdrop-watch",
+      "title": "BookDrop Watch",
+      "domain": "Public Library Returns Chute Condition Monitoring",
+      "source_path": "bookdrop-watch",
+      "nodes": [
+        {"id": "chute-sentinel", "roles": ["observe"]},
+        {"id": "bin-scale", "roles": ["observe"]},
+        {"id": "gateway", "roles": ["coordinate"]}
+      ]
     }
   ]
 }
