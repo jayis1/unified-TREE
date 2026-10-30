@@ -3136,6 +3136,17 @@
         {"id": "power-weather", "roles": ["observe"]},
         {"id": "gateway", "roles": ["coordinate"]}
       ]
+    },
+    {
+      "id": "shade-share",
+      "title": "ShadeShare",
+      "domain": "Public Shade Asset Availability & Surface Heat Context",
+      "source_path": "shade-share",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "shade-node", "roles": ["observe"]},
+        {"id": "surface-node", "roles": ["observe"]}
+      ]
     }
   ]
 }
