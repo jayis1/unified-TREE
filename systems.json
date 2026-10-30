@@ -3083,6 +3083,17 @@
       ]
     },
     {
+      "id": "spokesense",
+      "title": "SpokeSense",
+      "domain": "Bicycle Maintenance",
+      "source_path": "spokesense",
+      "nodes": [
+        {"id": "hub", "roles": ["reason", "coordinate"]},
+        {"id": "wheel-sensor", "roles": ["observe"]},
+        {"id": "stand-gauge", "roles": ["observe"]}
+      ]
+    },
+    {
       "id": "airshare",
       "title": "AirShare",
       "domain": "Shared-Room Ventilation Context",
