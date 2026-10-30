@@ -3114,6 +3114,17 @@
         {"id": "storage-node", "roles": ["observe"]},
         {"id": "intake-dock", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "pollinator-patch",
+      "title": "PollinatorPatch — community pollinator-garden stewardship",
+      "domain": "Community Pollinator-Garden Stewardship",
+      "source_path": "pollinator-patch",
+      "nodes": [
+        {"id": "bed-probe", "roles": ["observe"]},
+        {"id": "bloom-checkin", "roles": ["observe"]},
+        {"id": "site-gateway", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }
