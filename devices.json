@@ -110,7 +110,8 @@
     {"id":"paper-bias","domain":"mechanical-testing","roles":["observe","reason"]},
     {"id":"seed-counter","domain":"agriculture","roles":["observe"]},
     {"id":"cell-scout","domain":"battery-testing","roles":["observe","reason"]},
-    {"id":"thread-gauge","domain":"textile testing","roles":["observe","reason"]}
+    {"id":"thread-gauge","domain":"textile testing","roles":["observe","reason"]},
+    {"id":"paper-dryness","domain":"mechanical-testing","roles":["observe"]}
   ]
 }
 

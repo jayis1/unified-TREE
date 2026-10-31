@@ -3202,6 +3202,17 @@
         {"id": "sensor-node", "roles": ["observe"]},
         {"id": "bench-dock", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "cacheready",
+      "title": "CacheReady",
+      "domain": "Community Emergency-Supply Cache Readiness",
+      "source_path": "cacheready",
+      "nodes": [
+        {"id": "cabinet-sentinel", "roles": ["observe"]},
+        {"id": "hub", "roles": ["coordinate"]},
+        {"id": "utility-sentinel", "roles": ["observe"]}
+      ]
     }
   ]
 }
