@@ -112,7 +112,8 @@
     {"id":"cell-scout","domain":"battery-testing","roles":["observe","reason"]},
     {"id":"thread-gauge","domain":"textile testing","roles":["observe","reason"]},
     {"id":"paper-dryness","domain":"mechanical-testing","roles":["observe"]},
-    {"id":"curtain-scope","domain":"camera-maintenance","roles":["observe","reason"]}
+    {"id":"curtain-scope","domain":"camera-maintenance","roles":["observe","reason"]},
+    {"id":"flicker-scope","domain":"optics","roles":["observe","reason"]}
   ]
 }
 

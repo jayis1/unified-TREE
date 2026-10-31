@@ -3223,6 +3223,17 @@
         {"id": "station-observer", "roles": ["observe"]},
         {"id": "kitchen-gateway", "roles": ["coordinate"]}
       ]
+    },
+    {
+      "id": "drainwatch",
+      "title": "DrainWatch — community street-inlet maintenance observations",
+      "domain": "Community Street-Inlet Maintenance",
+      "source_path": "drainwatch",
+      "nodes": [
+        {"id": "inlet-node", "roles": ["observe", "reason"]},
+        {"id": "rain-context-node", "roles": ["observe"]},
+        {"id": "gateway", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }
