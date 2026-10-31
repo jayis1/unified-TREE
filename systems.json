@@ -3234,6 +3234,17 @@
         {"id": "rain-context-node", "roles": ["observe"]},
         {"id": "gateway", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "artpath",
+      "title": "ArtPath — accessible neighborhood public-art interpretation",
+      "domain": "Community Cultural Access",
+      "source_path": "artpath",
+      "nodes": [
+        {"id": "artwork-station", "roles": ["observe", "act"]},
+        {"id": "context-node", "roles": ["observe"]},
+        {"id": "gateway", "roles": ["coordinate"]}
+      ]
     }
   ]
 }
