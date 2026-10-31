@@ -3213,6 +3213,16 @@
         {"id": "hub", "roles": ["coordinate"]},
         {"id": "utility-sentinel", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "cookshare",
+      "title": "CookShare — shared-kitchen appliance readiness",
+      "domain": "Shared Kitchen Readiness",
+      "source_path": "cookshare",
+      "nodes": [
+        {"id": "station-observer", "roles": ["observe"]},
+        {"id": "kitchen-gateway", "roles": ["coordinate"]}
+      ]
     }
   ]
 }
