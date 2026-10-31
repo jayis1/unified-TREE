@@ -3169,6 +3169,17 @@
         {"id": "bin-scale", "roles": ["observe"]},
         {"id": "gateway", "roles": ["coordinate"]}
       ]
+    },
+    {
+      "id": "courtside",
+      "title": "CourtSide",
+      "domain": "Public Court Condition Monitoring",
+      "source_path": "courtside",
+      "nodes": [
+        {"id": "gateway", "roles": ["coordinate"]},
+        {"id": "surface-sentinel", "roles": ["observe"]},
+        {"id": "inspection-beacon", "roles": ["observe"]}
+      ]
     }
   ]
 }

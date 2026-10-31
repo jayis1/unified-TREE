@@ -108,7 +108,8 @@
     {"id":"warp-meter","domain":"textile testing","roles":["observe"]},
     {"id":"spine-press-witness","domain":"bookbinding","roles":["observe"]},
     {"id":"paper-bias","domain":"mechanical-testing","roles":["observe","reason"]},
-    {"id":"seed-counter","domain":"agriculture","roles":["observe"]}
+    {"id":"seed-counter","domain":"agriculture","roles":["observe"]},
+    {"id":"cell-scout","domain":"battery-testing","roles":["observe","reason"]}
   ]
 }
 
