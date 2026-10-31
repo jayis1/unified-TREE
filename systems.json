@@ -3191,6 +3191,17 @@
         {"id": "supply-node", "roles": ["observe"]},
         {"id": "gateway", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "labsignal",
+      "title": "LabSignal",
+      "domain": "Community Science Labs",
+      "source_path": "labsignal",
+      "nodes": [
+        {"id": "gateway", "roles": ["coordinate"]},
+        {"id": "sensor-node", "roles": ["observe"]},
+        {"id": "bench-dock", "roles": ["observe"]}
+      ]
     }
   ]
 }
