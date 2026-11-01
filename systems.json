@@ -3296,6 +3296,18 @@
         {"id": "rack-node", "roles": ["observe"]},
         {"id": "check-in-dock", "roles": ["coordinate"]}
       ]
+    },
+    {
+      "id": "pawstation",
+      "title": "PawStation — neighborhood dog-waste station readiness",
+      "domain": "Community Pet-Waste Station Readiness",
+      "source_path": "pawstation",
+      "nodes": [
+        {"id": "site-gateway", "roles": ["reason", "coordinate"]},
+        {"id": "bag-cassette", "roles": ["observe"]},
+        {"id": "bin-node", "roles": ["observe"]},
+        {"id": "inspection-beacon", "roles": ["observe"]}
+      ]
     }
   ]
 }
