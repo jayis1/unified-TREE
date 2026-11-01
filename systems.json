@@ -3308,6 +3308,17 @@
         {"id": "bin-node", "roles": ["observe"]},
         {"id": "inspection-beacon", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "waymark",
+      "title": "Waymark — public tactile wayfinding readiness",
+      "domain": "Public Accessibility & Wayfinding",
+      "source_path": "waymark",
+      "nodes": [
+        {"id": "marker-node", "roles": ["observe"]},
+        {"id": "inspection-beacon", "roles": ["observe"]},
+        {"id": "gateway", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }
