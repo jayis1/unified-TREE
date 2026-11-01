@@ -3245,6 +3245,18 @@
         {"id": "context-node", "roles": ["observe"]},
         {"id": "gateway", "roles": ["coordinate"]}
       ]
+    },
+    {
+      "id": "play-share",
+      "title": "PlayShare — community sports-equipment library readiness",
+      "domain": "Community Sports Equipment Readiness",
+      "source_path": "play-share",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "rack-scale", "roles": ["observe"]},
+        {"id": "return-dock", "roles": ["observe"]},
+        {"id": "inspection-beacon", "roles": ["observe"]}
+      ]
     }
   ]
 }
