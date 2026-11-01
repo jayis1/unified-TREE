@@ -117,7 +117,8 @@
     {"id":"curtain-scope","domain":"camera-maintenance","roles":["observe","reason"]},
     {"id":"flicker-scope","domain":"optics","roles":["observe","reason"]},
     {"id":"hinge-meter","domain":"mechanical-testing","roles":["observe"]},
-    {"id":"backlash-bench","domain":"mechanical-testing","roles":["observe","reason"]}
+    {"id":"backlash-bench","domain":"mechanical-testing","roles":["observe","reason"]},
+    {"id":"crease-meter","domain":"mechanical-testing","roles":["observe","reason"]}
   ]
 }
 

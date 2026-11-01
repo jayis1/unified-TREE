@@ -3284,6 +3284,18 @@
         {"id": "return-dock", "roles": ["observe"]},
         {"id": "inspection-beacon", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "tuneshare",
+      "title": "TuneShare — community music room readiness coordination",
+      "domain": "Community Music-Room Instrument & Climate Readiness",
+      "source_path": "tuneshare",
+      "nodes": [
+        {"id": "room-gateway", "roles": ["reason", "coordinate"]},
+        {"id": "climate-node", "roles": ["observe"]},
+        {"id": "rack-node", "roles": ["observe"]},
+        {"id": "check-in-dock", "roles": ["coordinate"]}
+      ]
     }
   ]
 }
