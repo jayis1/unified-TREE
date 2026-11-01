@@ -61,6 +61,7 @@
     {"id":"terra-pin","domain":"agriculture-network","roles":["observe","reason","coordinate"]},
     {"id":"therma-weave","domain":"wearable-control","roles":["observe","reason","act","coordinate"]},
     {"id":"thermo-trace","domain":"materials","roles":["observe","reason","act"]},
+    {"id":"tip-trace","domain":"electronics","roles":["observe"]},
     {"id":"tremor-tile","domain":"infrastructure-network","roles":["observe","reason","coordinate"]},
     {"id":"vibra-beam","domain":"materials","roles":["observe","reason"]},
     {"id":"visco-shear","domain":"materials","roles":["observe","reason","act"]},

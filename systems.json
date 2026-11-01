@@ -1253,6 +1253,33 @@
       ]
     },
     {
+      "id": "neighbor-nest",
+      "title": "NeighborNest",
+      "domain": "Shared Indoor Plant Care",
+      "source_path": "neighbor-nest",
+      "nodes": [
+        {
+          "id": "hub-node",
+          "roles": [
+            "reason",
+            "coordinate"
+          ]
+        },
+        {
+          "id": "soil-probe",
+          "roles": [
+            "observe"
+          ]
+        },
+        {
+          "id": "check-in-dock",
+          "roles": [
+            "observe"
+          ]
+        }
+      ]
+    },
+    {
       "id": "aqua-guard",
       "title": "Aqua Guard",
       "domain": "Home Pet Care",
