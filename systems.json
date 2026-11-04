@@ -3330,6 +3330,18 @@
         {"id": "room-sentinel", "roles": ["observe"]},
         {"id": "gateway", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "chorecue",
+      "title": "ChoreCue — shared household routines",
+      "domain": "Household Routine & Supply Coordination",
+      "source_path": "chorecue",
+      "nodes": [
+        {"id": "task-button", "roles": ["observe"]},
+        {"id": "supply-dock", "roles": ["observe"]},
+        {"id": "room-beacon", "roles": ["observe"]},
+        {"id": "home-hub", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }
