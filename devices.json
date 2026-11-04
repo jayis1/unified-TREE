@@ -120,7 +120,8 @@
     {"id":"hinge-meter","domain":"mechanical-testing","roles":["observe"]},
     {"id":"backlash-bench","domain":"mechanical-testing","roles":["observe","reason"]},
     {"id":"crease-meter","domain":"mechanical-testing","roles":["observe","reason"]},
-    {"id":"hinge-sag","domain":"mechanical-testing","roles":["observe","reason"]}
+    {"id":"hinge-sag","domain":"mechanical-testing","roles":["observe","reason"]},
+    {"id":"leaf-ledger","domain":"botany","roles":["observe","reason"]}
   ]
 }
 

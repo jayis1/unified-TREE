@@ -3319,6 +3319,17 @@
         {"id": "inspection-beacon", "roles": ["observe"]},
         {"id": "gateway", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "drycycle",
+      "title": "DryCycle — indoor laundry drying companion",
+      "domain": "Indoor Laundry Air-Drying",
+      "source_path": "drycycle",
+      "nodes": [
+        {"id": "rack-scale", "roles": ["observe"]},
+        {"id": "room-sentinel", "roles": ["observe"]},
+        {"id": "gateway", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }
