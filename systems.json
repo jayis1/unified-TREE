@@ -3342,6 +3342,17 @@
         {"id": "room-beacon", "roles": ["observe"]},
         {"id": "home-hub", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "movemate",
+      "title": "MoveMate — local-first moving box inventory and wayfinding",
+      "domain": "Moving & Storage",
+      "source_path": "movemate",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "room-beacon", "roles": ["observe"]},
+        {"id": "scan-dock", "roles": ["observe", "coordinate"]}
+      ]
     }
   ]
 }

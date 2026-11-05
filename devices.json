@@ -122,7 +122,8 @@
     {"id":"crease-meter","domain":"mechanical-testing","roles":["observe","reason"]},
     {"id":"hinge-sag","domain":"mechanical-testing","roles":["observe","reason"]},
     {"id":"leaf-ledger","domain":"botany","roles":["observe","reason"]},
-    {"id":"crease-checker","domain":"mechanical-testing","roles":["observe","reason"]}
+    {"id":"crease-checker","domain":"mechanical-testing","roles":["observe","reason"]},
+    {"id":"tide-tab","domain":"aquarium-water-level-monitoring","roles":["observe"]}
   ]
 }
 
