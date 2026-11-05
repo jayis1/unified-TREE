@@ -3353,6 +3353,18 @@
         {"id": "room-beacon", "roles": ["observe"]},
         {"id": "scan-dock", "roles": ["observe", "coordinate"]}
       ]
+    },
+    {
+      "id": "pantrypath",
+      "title": "PantryPath",
+      "domain": "Community Fridge Coordination",
+      "source_path": "pantrypath",
+      "nodes": [
+        {"id": "site-hub", "roles": ["reason", "coordinate"]},
+        {"id": "shelf-scale", "roles": ["observe"]},
+        {"id": "fridge-sentinel", "roles": ["observe"]},
+        {"id": "intake-dock", "roles": ["observe"]}
+      ]
     }
   ]
 }
