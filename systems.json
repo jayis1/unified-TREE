@@ -3387,6 +3387,17 @@
         {"id": "window-sentinel", "roles": ["observe"]},
         {"id": "weather-sentinel", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "linewise",
+      "title": "LineWise — shared outdoor laundry weather & line-readiness system",
+      "domain": "Shared Outdoor Laundry",
+      "source_path": "linewise",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "line-sentinel", "roles": ["observe"]},
+        {"id": "weather-sentinel", "roles": ["observe"]}
+      ]
     }
   ]
 }

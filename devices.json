@@ -97,6 +97,7 @@
     {"id":"key-travel","domain":"mechanical-testing","roles":["observe"]},
     {"id":"escapement-ear","domain":"mechanical-testing","roles":["observe","reason"]},
     {"id":"film-gate","domain":"optics","roles":["observe","reason","act"]},
+    {"id":"fret-meter","domain":"instrumentation","roles":["observe","reason"]},
     {"id":"bounce-bench","domain":"mechanical-testing","roles":["observe"]},
     {"id":"braille-check","domain":"accessibility","roles":["reason"]},
     {"id":"morse-mate","domain":"accessibility","roles":["observe","reason","act"]},
