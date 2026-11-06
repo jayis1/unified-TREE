@@ -3376,6 +3376,17 @@
         {"id": "fridge-sentinel", "roles": ["observe"]},
         {"id": "intake-dock", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "birdguard",
+      "title": "BirdGuard — window-collision prevention and evidence",
+      "domain": "Window Collision Risk Monitoring",
+      "source_path": "birdguard",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "window-sentinel", "roles": ["observe"]},
+        {"id": "weather-sentinel", "roles": ["observe"]}
+      ]
     }
   ]
 }
