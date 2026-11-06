@@ -3355,6 +3355,17 @@
       ]
     },
     {
+      "id": "powerbank-loop",
+      "title": "PowerBankLoop — anonymous community power-bank lending",
+      "domain": "Community Device Charging Access",
+      "source_path": "powerbank-loop",
+      "nodes": [
+        {"id": "site-gateway", "roles": ["reason", "coordinate"]},
+        {"id": "loan-dock", "roles": ["observe"]},
+        {"id": "pack-tag", "roles": ["observe"]}
+      ]
+    },
+    {
       "id": "pantrypath",
       "title": "PantryPath",
       "domain": "Community Fridge Coordination",
