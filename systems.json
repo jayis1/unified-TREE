@@ -3398,6 +3398,17 @@
         {"id": "line-sentinel", "roles": ["observe"]},
         {"id": "weather-sentinel", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "sharetable",
+      "title": "ShareTable — Community meal-service coordination",
+      "domain": "Community Meal-Service Coordination",
+      "source_path": "ShareTable",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "serving-node", "roles": ["observe"]},
+        {"id": "return-node", "roles": ["observe"]}
+      ]
     }
   ]
 }
