@@ -3433,6 +3433,17 @@
         {"id": "dock-observer", "roles": ["observe"]},
         {"id": "return-beacon", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "claimloop",
+      "title": "ClaimLoop — community lost-property coordination",
+      "domain": "Community Lost-Property Coordination",
+      "source_path": "claimloop",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "intake-tray", "roles": ["observe"]},
+        {"id": "shelf-node", "roles": ["observe"]}
+      ]
     }
   ]
 }
