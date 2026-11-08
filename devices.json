@@ -128,7 +128,8 @@
     {"id":"tide-tab","domain":"aquarium-water-level-monitoring","roles":["observe"]},
     {"id":"splice-scout","domain":"cassette-tape-inspection","roles":["observe"]},
     {"id":"tea-steep","domain":"food-process","roles":["observe"]},
-    {"id":"row-meter","domain":"agriculture","roles":["observe","reason"]}
+    {"id":"row-meter","domain":"agriculture","roles":["observe","reason"]},
+    {"id":"cooldown-clerk","domain":"food-process","roles":["observe"]}
   ]
 }
 

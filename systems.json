@@ -3421,6 +3421,18 @@
         {"id": "shade-node", "roles": ["observe", "act"]},
         {"id": "outdoor-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "battery-loop",
+      "title": "BatteryLoop — household rechargeable-battery readiness",
+      "domain": "Household Rechargeable-Battery Readiness",
+      "source_path": "battery-loop",
+      "nodes": [
+        {"id": "home-gateway", "roles": ["reason", "coordinate"]},
+        {"id": "tray-node", "roles": ["observe"]},
+        {"id": "dock-observer", "roles": ["observe"]},
+        {"id": "return-beacon", "roles": ["observe"]}
+      ]
     }
   ]
 }
