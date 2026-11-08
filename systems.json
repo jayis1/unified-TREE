@@ -3409,6 +3409,18 @@
         {"id": "serving-node", "roles": ["observe"]},
         {"id": "return-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "daylightsync",
+      "title": "DaylightSync",
+      "domain": "Daylight & Glare Management",
+      "source_path": "daylightsync",
+      "nodes": [
+        {"id": "gateway", "roles": ["reason", "coordinate"]},
+        {"id": "window-sentinel", "roles": ["observe"]},
+        {"id": "shade-node", "roles": ["observe", "act"]},
+        {"id": "outdoor-node", "roles": ["observe"]}
+      ]
     }
   ]
 }
