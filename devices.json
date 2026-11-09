@@ -130,7 +130,8 @@
     {"id":"tea-steep","domain":"food-process","roles":["observe"]},
     {"id":"row-meter","domain":"agriculture","roles":["observe","reason"]},
     {"id":"cooldown-clerk","domain":"food-process","roles":["observe"]},
-    {"id":"clay-ledger","domain":"materials-testing","roles":["observe","reason"]}
+    {"id":"clay-ledger","domain":"materials-testing","roles":["observe","reason"]},
+    {"id":"crease-stop","domain":"bookbinding","roles":["observe"]}
   ]
 }
 
