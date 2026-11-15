@@ -87,6 +87,7 @@
     {"id":"rain-gauge-keeper","domain":"agriculture-network","roles":["observe","reason"]},
     {"id":"loom-latch","domain":"textile-weaving","roles":["observe","reason"]},
     {"id":"flow-ledger","domain":"water-metering","roles":["observe","reason"]},
+    {"id":"ink-witness","domain":"materials-testing","roles":["observe"]},
     {"id":"warp-watch","domain":"textile fabrication","roles":["observe"]},
     {"id":"shutter-tick","domain":"camera-maintenance","roles":["observe","reason"]},
     {"id":"dial-reader","domain":"instrumentation","roles":["observe","reason"]},

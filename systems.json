@@ -1253,6 +1253,17 @@
       ]
     },
     {
+      "id": "meal-mate",
+      "title": "MealMate",
+      "domain": "Household Meal-Prep Coordination",
+      "source_path": "meal-mate",
+      "nodes": [
+        {"id": "hub", "roles": ["reason", "coordinate"]},
+        {"id": "shelf-scale", "roles": ["observe"]},
+        {"id": "fridge-context", "roles": ["observe"]}
+      ]
+    },
+    {
       "id": "neighbor-nest",
       "title": "NeighborNest",
       "domain": "Shared Indoor Plant Care",
