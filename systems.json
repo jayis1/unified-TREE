@@ -3455,6 +3455,17 @@
         {"id": "intake-tray", "roles": ["observe"]},
         {"id": "shelf-node", "roles": ["observe"]}
       ]
+    },
+    {
+      "id": "dishloop",
+      "title": "DishLoop — shared-kitchen reusable dish circulation",
+      "domain": "Community Kitchen Dish Circulation",
+      "source_path": "dishloop",
+      "nodes": [
+        {"id": "rack-sentinel", "roles": ["observe"]},
+        {"id": "return-gate", "roles": ["observe"]},
+        {"id": "site-hub", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }
