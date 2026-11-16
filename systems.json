@@ -3466,6 +3466,18 @@
         {"id": "return-gate", "roles": ["observe"]},
         {"id": "site-hub", "roles": ["reason", "coordinate"]}
       ]
+    },
+    {
+      "id": "readtogether",
+      "title": "ReadTogether",
+      "domain": "Shared Reading Routines",
+      "source_path": "readtogether",
+      "nodes": [
+        {"id": "hub", "roles": ["reason", "coordinate"]},
+        {"id": "book-tag", "roles": ["observe"]},
+        {"id": "reading-dock", "roles": ["observe"]},
+        {"id": "room-beacon", "roles": ["observe", "act"]}
+      ]
     }
   ]
 }
