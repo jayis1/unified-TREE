@@ -3478,6 +3478,18 @@
         {"id": "reading-dock", "roles": ["observe"]},
         {"id": "room-beacon", "roles": ["observe", "act"]}
       ]
+    },
+    {
+      "id": "greaseloop",
+      "title": "GreaseLoop — local used-cooking-oil collection coordination",
+      "domain": "Household Used-Cooking-Oil Collection",
+      "source_path": "greaseloop",
+      "nodes": [
+        {"id": "kitchen-dock", "roles": ["observe"]},
+        {"id": "storage-sentinel", "roles": ["observe"]},
+        {"id": "home-hub", "roles": ["reason", "coordinate"]},
+        {"id": "collection-app", "roles": ["coordinate"]}
+      ]
     }
   ]
 }
