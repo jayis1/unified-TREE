@@ -135,7 +135,8 @@
     {"id":"crease-stop","domain":"bookbinding","roles":["observe"]},
     {"id":"patch-card","domain":"textile-testing","roles":["observe"]},
     {"id":"shade-scout","domain":"optics","roles":["observe","reason"]},
-    {"id":"hinge-witness","domain":"mechanical-testing","roles":["observe"]}
+    {"id":"hinge-witness","domain":"mechanical-testing","roles":["observe"]},
+    {"id":"mate-trace","domain":"mechanical-testing","roles":["observe","reason"]}
   ]
 }
 
