@@ -3490,6 +3490,17 @@
         {"id": "home-hub", "roles": ["reason", "coordinate"]},
         {"id": "collection-app", "roles": ["coordinate"]}
       ]
+    },
+    {
+      "id": "quiet-hours",
+      "title": "QuietHours — shared-home quiet-time coordination",
+      "domain": "Shared-Home Quiet Coordination",
+      "source_path": "quiet-hours",
+      "nodes": [
+        {"id": "room-sentinel", "roles": ["observe"]},
+        {"id": "doorway-beacon", "roles": ["observe"]},
+        {"id": "hub", "roles": ["reason", "coordinate"]}
+      ]
     }
   ]
 }

@@ -137,7 +137,8 @@
     {"id":"shade-scout","domain":"optics","roles":["observe","reason"]},
     {"id":"hinge-witness","domain":"mechanical-testing","roles":["observe"]},
     {"id":"mate-trace","domain":"mechanical-testing","roles":["observe","reason"]},
-    {"id":"clock-rate-witness","domain":"mechanical-testing","roles":["observe","reason"]}
+    {"id":"clock-rate-witness","domain":"mechanical-testing","roles":["observe","reason"]},
+    {"id":"flex-cycle","domain":"cable-diagnostics","roles":["observe"]}
   ]
 }
 
