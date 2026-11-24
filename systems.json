@@ -3492,6 +3492,17 @@
       ]
     },
     {
+      "id": "listenlink",
+      "title": "ListenLink — venue assistive-listening readiness",
+      "domain": "Community Venue Accessibility",
+      "source_path": "listenlink",
+      "nodes": [
+        {"id": "venue-hub", "roles": ["reason", "coordinate"]},
+        {"id": "receiver-dock", "roles": ["observe"]},
+        {"id": "room-beacon", "roles": ["observe"]}
+      ]
+    },
+    {
       "id": "quiet-hours",
       "title": "QuietHours — shared-home quiet-time coordination",
       "domain": "Shared-Home Quiet Coordination",
