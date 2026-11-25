@@ -3503,6 +3503,18 @@
       ]
     },
     {
+      "id": "meal-mosaic",
+      "title": "MealMosaic — shared-meal service coordination",
+      "domain": "Community Meal Coordination",
+      "source_path": "meal-mosaic",
+      "nodes": [
+        {"id": "serving-node", "roles": ["observe"]},
+        {"id": "return-node", "roles": ["observe"]},
+        {"id": "room-node", "roles": ["observe"]},
+        {"id": "gateway", "roles": ["reason", "coordinate"]}
+      ]
+    },
+    {
       "id": "quiet-hours",
       "title": "QuietHours — shared-home quiet-time coordination",
       "domain": "Shared-Home Quiet Coordination",

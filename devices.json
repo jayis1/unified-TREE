@@ -31,6 +31,7 @@
     {"id":"lode-sweep","domain":"geophysics","roles":["observe","reason","coordinate"]},
     {"id":"lumen-cast","domain":"optics","roles":["observe","reason","act"]},
     {"id":"melody-sprite","domain":"creative-instrument","roles":["observe","reason","act"]},
+    {"id":"melt-meter","domain":"reflow-monitoring","roles":["observe"]},
     {"id":"mussel-watch","domain":"ecology-network","roles":["observe","reason","coordinate"]},
     {"id":"mycelium-node","domain":"bioprocess-control","roles":["observe","reason","act","coordinate"]},
     {"id":"trap-sage","domain":"energy","roles":["observe","reason"]},
