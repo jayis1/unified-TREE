@@ -3515,6 +3515,17 @@
       ]
     },
     {
+      "id": "caption-bridge",
+      "title": "CaptionBridge — Local Meeting Captioning",
+      "domain": "Accessibility",
+      "source_path": "caption-bridge",
+      "nodes": [
+        {"id": "mic-sentinel", "roles": ["observe"]},
+        {"id": "room-hub", "roles": ["coordinate"]},
+        {"id": "display-client", "roles": ["coordinate"]}
+      ]
+    },
+    {
       "id": "quiet-hours",
       "title": "QuietHours — shared-home quiet-time coordination",
       "domain": "Shared-Home Quiet Coordination",

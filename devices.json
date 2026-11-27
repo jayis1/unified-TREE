@@ -139,6 +139,7 @@
     {"id":"hinge-witness","domain":"mechanical-testing","roles":["observe"]},
     {"id":"mate-trace","domain":"mechanical-testing","roles":["observe","reason"]},
     {"id":"clock-rate-witness","domain":"mechanical-testing","roles":["observe","reason"]},
+    {"id":"contact-cycle","domain":"mechanical-testing","roles":["observe"]},
     {"id":"flex-cycle","domain":"cable-diagnostics","roles":["observe"]},
     {"id":"sky-glow","domain":"astronomy","roles":["observe"]}
   ]
